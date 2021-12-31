@@ -1,0 +1,128 @@
+.banner__filterRes-wrap {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+.banner__filterRes {
+  padding: 16px 32px;
+  background-color: var(--colorPink);
+  display: flex;
+}
+.banner__filterRes-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1280px;
+  border: 1px solid #e3e5e6;
+  border-radius: 4px;
+  background-color: #fff;
+}
+/* Search */
+.banner__filterRes-search {
+  flex: 1 1 50%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 0 16px;
+  border-right: 1px solid #e3e5e6;
+}
+.filterRes__search {
+  height: 42px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.filterRes__search-icon {
+  flex: 0 0 16px;
+  height: 16px;
+  margin-right: 12px;
+}
+.filterRes__search-input {
+  width: 100%;
+  min-height: 16px;
+  padding: 0 16px 0 0;
+  border: none;
+  color: var(--colorText);
+  font-size: var(--fontSizeSmall);
+  font-weight: 500;
+  line-height: 1.42857143;
+  text-overflow: ellipsis;
+  background-color: transparent;
+}
+.filterRes__search-input:focus {
+  outline: 0;
+}
+.filterRes__search-clear {
+  position: absolute;
+  right: -12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  cursor: pointer;
+}
+.filterRes__search-clearIcon {
+  width: 8px;
+  height: 12px;
+  fill: #8a959e;
+  transition: all 0.1s;
+}
+/* End Search */
+
+/* Filter */
+.banner__filterRes-filter {
+  flex: 1 1 50%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 0 16px;
+  border-right: 1px solid #e3e5e6;
+}
+.filterRes__filter {
+  height: 42px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.filterRes__filter-title {
+  font-size: var(--fontSizeSmall);
+  margin-right: 8px;
+  color: var(--colorText);
+}
+.filterRes__filter-icon {
+  flex: 0 0 16px;
+  height: 16px;
+  margin-right: 12px;
+}
+
+.filterRes__filter-right {
+  position: absolute;
+  right: -12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  cursor: pointer;
+}
+.filterRes__filter-rightIcon {
+  width: 8px;
+  height: 12px;
+  fill: #8a959e;
+  transition: all 0.1s;
+}
+/* End Filter */
+
+/*Responsive*/
+@media only screen and (max-width: 40em) {
+  .banner__filterRes-search {
+    flex: 1 1 60%;
+  }
+  .banner__filterRes-filter {
+    flex: 1 1 40%;
+  }
+}

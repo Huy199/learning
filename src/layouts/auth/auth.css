@@ -1,0 +1,17 @@
+.authPage__header .landing__header {
+  color: black;
+}
+.authPage__header-component .landing__header {
+  position: unset;
+  color: var(--colorText);
+}
+.authPage__header-component .dropdown__btn {
+  color: var(--colorText);
+}
+.authPage__header-component .hamburger__icon {
+  filter: brightness(0);
+}
+
+.authPage__list-component {
+  min-height: calc(100vh - 428.24px);
+}

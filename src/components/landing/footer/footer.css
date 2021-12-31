@@ -1,0 +1,121 @@
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--colorText);
+  color: #e3e5e6;
+}
+/* first group footer */
+.first__group-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 32px;
+}
+.first__footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1280px;
+  padding: 0 0 40px;
+}
+.first_footer-linkBox {
+  flex: 0 1 25%;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 40px 0 0;
+}
+.title__linkBox {
+  font-size: var(--fontSizeMedium);
+  margin-bottom: 12px;
+  color: #fff;
+}
+.menuList__linkBox {
+  list-style: none;
+  line-height: 1.71429;
+  font-size: var(--fontSizeTiny);
+}
+.menuLink__linkBook {
+  display: flex;
+  align-items: center;
+  color: #e3e5e6;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.second__content-row {
+  border-top: 1px solid hsla(0, 0%, 100%, 0.1);
+}
+
+/* second group footer */
+.second__group-footer {
+  background: #32393f;
+  font-size: var(--fontSizeTiny);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 32px;
+}
+.second__footer-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1280px;
+  padding: 20px 0 20px;
+}
+.copyRight__footer {
+  flex: 0 1 26%;
+  font-weight: 500;
+  font-size: var(--fontSizeSmall);
+}
+.policy__footer {
+  display: flex;
+  align-items: center;
+  flex: 1 1 50%;
+  font-size: var(--fontSizeTiny);
+}
+.link__policy::before {
+  content: '\B7';
+  margin: 0 8px;
+}
+
+/* TODO: dev-duc_responsive */
+@media only screen and (max-width: 48em) {
+  .first__group-footer {
+    padding: 0 24px;
+  }
+  .first__footer-row {
+    padding: 24px 0 24px 0;
+  }
+  .first_footer-linkBox {
+    padding: 8px 0 8px 0;
+  }
+  .first__footer-row {
+    flex-direction: column;
+  }
+  .menuList__linkBox {
+    display: flex;
+  }
+  .menuLink__linkBook {
+    margin-right: 16px;
+  }
+  .second__footer-row {
+    padding: 32px 0 48px 0;
+  }
+  .second__group-footer {
+    padding: 0 24px;
+  }
+  .copyRight__footer {
+    flex: 100%;
+    margin-bottom: 8px;
+  }
+}
+@media only screen and (max-width: 31em) {
+  .first__group-footer {
+    padding: 0 16px;
+  }
+  .second__group-footer {
+    padding: 0 24px;
+  }
+}

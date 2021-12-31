@@ -1,0 +1,20 @@
+:root {
+  /* Link style root*/
+  --fontSizeLarge: 2.6rem;
+  --fontSizeMedium: 1.8rem;
+  --fontSizeSmall: 1.4rem;
+  --fontSizeTiny: 1.2rem;
+  --fontSizeLink: 16px;
+  --lineHeightLink: 28px;
+  --letterSpacingLink: 0.5px;
+  --fontWeightLink: 500;
+  --linkHoverColor: #696969;
+  --colorBlue: #3bb3bd;
+  --colorBlueAdmin: rgba(25, 103, 210, 0.9);
+  --colorGreen: #50bf16;
+  --colorPink: #ede0da;
+  --colorText: #384047;
+}
+html {
+  font-size: 62.5%;
+}

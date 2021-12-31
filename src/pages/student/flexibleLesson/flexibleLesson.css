@@ -1,0 +1,36 @@
+#flexibleLesson {
+  background-color: #edeff0;
+  padding-bottom: 64px;
+}
+#flexibleLesson .banner {
+  @apply flex flex-col justify-center relative w-full;
+  background-color: var(--colorPink);
+  color: var(--colorText);
+}
+#flexibleLesson .bannerHeader {
+  @apply md:container md:mx-auto px-8 w-full flex justify-center;
+  color: var(--colorText);
+}
+#flexibleLesson .titleWrapper {
+  @apply mx-8;
+  padding-top: 48px;
+  text-align: center;
+}
+#flexibleLesson .mainTitle {
+  font-size: var(--fontSizeLarge);
+  font-weight: 600;
+  margin-bottom: 10px;
+  max-width: 100%;
+  color: var(--colorText);
+}
+#flexibleLesson .bodyContainer {
+  @apply grid grid-cols-2 md:container md:mx-auto px-8 mt-16 gap-10;
+  max-width: 1280px;
+}
+#flexibleLesson .listColumn_left,
+.listColumn_right {
+  @apply col-span-1;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1;
+}

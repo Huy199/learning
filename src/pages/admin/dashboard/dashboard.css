@@ -1,0 +1,41 @@
+#adminDashboard {
+  @apply h-full w-full;
+  overflow: hidden;
+}
+
+#adminDashboard .wrapper {
+  position: relative;
+  overflow: hidden auto;
+  padding: 0 62px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+#adminDashboard .body {
+  max-width: 1280px;
+  margin: auto;
+}
+
+/* style statistic */
+.dashboard__statistic {
+  margin-top: 14.25px;
+  border: none;
+  display: block;
+}
+#adminDashboard .statistic_header {
+  @apply flex justify-between items-center;
+}
+#adminDashboard .statistic_title {
+  font-weight: 700;
+  margin: 0;
+  font-size: var(--fontSizeLarge);
+  line-height: 1.4;
+}
+#adminDashboard .statistic_card {
+  display: flex;
+}
+
+/* style chart */
+#adminDashboard .chart_container {
+  margin-top: 20px;
+}

@@ -1,0 +1,52 @@
+.optionForm {
+  @apply pl-4 text-gray-600 pr-11 relative w-full;
+  height: 40px;
+  background: #ffffff;
+  /* Divider/1 */
+
+  border: 1px solid var(--colorText);
+  box-sizing: border-box;
+  border-radius: 12px;
+  font-style: normal;
+  font-size: var(--fontSizeMedium);
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  overflow: hidden;
+  overflow: -moz-hidden-unscrollable;
+  outline: none;
+  background-color: transparent !important;
+}
+
+.optionForm-item {
+  @apply p-4 pr-12 text-gray-600 relative w-full;
+  height: 40px;
+  background: #ffffff;
+  /* Divider/1 */
+
+  border: 1px solid #0a0b0c;
+  box-sizing: border-box;
+  border-radius: 12px;
+  font-style: bold;
+  font-size: var(--fontSizeMedium);
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  overflow: hidden;
+  overflow: -moz-hidden-unscrollable;
+  outline: none;
+}
+
+.portal-select-form:invalid {
+  @apply text-gray-600 font-bold;
+}
+
+.portal-select-form:valid {
+  font-weight: bold;
+  color: var(--colorText);
+}
+
+.optionForm__arrow-custom {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+}

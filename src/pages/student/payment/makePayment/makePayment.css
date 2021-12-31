@@ -1,0 +1,299 @@
+#makePayment {
+  @apply flex py-16;
+  /* -webkit-box-pack: center; */
+  max-width: 915px;
+  margin: 0 auto;
+  padding: 40px 0;
+  gap: 32px;
+}
+
+#makePayment .bill__container {
+  flex: 3;
+  /* padding: 32px; */
+  background-color: #fff;
+  border-radius: 3px;
+}
+#makePayment .bill__body {
+  padding: 15px 0 32px 32px;
+}
+#makePayment .bill__header {
+  @apply flex;
+  align-items: center;
+  margin-bottom: 22px;
+}
+#makePayment .bill__avatarWrap {
+  @apply relative;
+  padding: 4px;
+  margin-right: 15px;
+}
+#makePayment .bill__avatarWrap > img {
+  width: 51px;
+  height: 51px;
+  border-radius: 50%;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+#makePayment .bill__ratting {
+  @apply absolute flex items-center justify-center;
+  background-color: #fff;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 30px;
+  height: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 15%);
+
+  font-size: var(--fontSizeTiny);
+}
+
+#makePayment .bill__ratting > img {
+  margin-right: 2px;
+}
+
+#makePayment .bill__infoWrap > h3 {
+  font-size: var(--fontSizeMedium);
+}
+
+#makePayment .bill__infoSubject {
+  @apply flex items-center;
+}
+
+#makePayment .bill__infoSubject > img {
+  margin-right: 10px;
+}
+
+#makePayment .bill__infoSubject > span {
+  font-size: var(--fontSizeTiny);
+}
+
+#makePayment .bill__dateCreate {
+  @apply flex flex-col;
+  gap: 5px;
+  font-size: var(--fontSizeSmall);
+  color: var(--colorText);
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+#makePayment .bill__dateCreate > h5 {
+  font-size: var(--fontSizeSmall);
+  color: var(--colorText);
+  font-weight: 600;
+}
+
+#makePayment .bill__serviceDetail {
+  @apply flex flex-col;
+  gap: 10px;
+  font-size: var(--fontSizeSmall);
+  padding: 10px 0;
+}
+
+#makePayment .bill__serviceDetail__header,
+#makePayment .bill__serviceDetail__price,
+#makePayment .bill__serviceDetail__free {
+  @apply flex items-center justify-between;
+}
+
+#makePayment .bill__serviceDetail__header > h5,
+#makePayment .bill__serviceDetail__header > p {
+  color: var(--colorText);
+  font-weight: 600;
+}
+
+#makePayment .bill__serviceDetail__price {
+  color: var(--colorText);
+}
+
+#makePayment .bill__serviceDetail__price > p {
+  /* font-weight: bold; */
+}
+
+#makePayment .bill__serviceDetail__free > p {
+  color: var(--colorGreen);
+}
+
+#makePayment .bill__total {
+  @apply flex items-center justify-between;
+  margin-top: 5px;
+  font-size: var(--fontSizeSmall);
+  font-weight: bold;
+}
+
+#makePayment .checkout__container {
+  flex: 5;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+#makePayment .checkout__content {
+  @apply flex flex-col;
+  gap: 20px;
+}
+
+#makePayment .checkout__header {
+  padding: 32px 0 32px 0;
+  margin: 0 32px 0 32px;
+  border-bottom: 1px solid #ccc;
+}
+
+#makePayment .checkout__header > h2 {
+  font-size: var(--fontSizeLarge);
+}
+
+#makePayment .checkout__content {
+  padding: 30px 32px;
+}
+
+#makePayment .checkout__content-header > h2 {
+  font-size: var(--fontSizeMedium);
+}
+
+#makePayment .checkout__content-desc {
+  @apply flex items-center;
+}
+
+#makePayment .checkout__content-desc > img {
+  width: 15px;
+  height: 15px;
+}
+
+#makePayment .checkout__content-desc > p {
+  font-size: var(--fontSizeSmall);
+  color: var(--colorText);
+  margin-left: 5px;
+}
+
+#makePayment .checkout__content-paypal {
+  @apply flex items-center justify-between;
+  padding: 10px 15px;
+  border: 1px solid var(--colorBlue);
+  border-radius: 5px;
+}
+
+#makePayment .checkout__content-paypal > .security {
+  width: 15px;
+  height: 15px;
+}
+
+#makePayment .checkout__content-paypalBtn {
+  @apply flex items-center justify-center;
+  padding: 12px 15px;
+  /* border: 1px solid var(--colorBlue); */
+  border-radius: 5px;
+  background-color: #ffc439;
+}
+
+#makePayment .checkout__footer {
+  @apply flex items-center;
+  padding: 10px 32px;
+}
+
+#makePayment .checkout__footer > img {
+  margin-right: 15px;
+}
+
+#makePayment .checkout__footer-content > h1 {
+  font-weight: bold;
+  font-size: var(--fontSizeSmall);
+  margin-bottom: 10px;
+}
+
+#makePayment .checkout__footer-content > p {
+  font-size: var(--fontSizeSmall);
+  color: var(--colorText);
+}
+
+/* custom checkbox */
+
+.makePaymentForm__container {
+  display: block;
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.makePayment__formGroup > .makePaymentForm__container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.makePayment__checkbox__label {
+  margin-left: 20px;
+}
+
+.makePayment__checkbox__label > span {
+  display: block;
+  font-size: var(--fontSizeSmall);
+  color: var(--colorText);
+}
+
+.makePayment__checkbox__label-active {
+  color: var(--colorGreen);
+  background-color: #eef8ea;
+  padding: 0 2px;
+  border-radius: 3px;
+}
+
+/* Create a custom checkbox */
+
+.makePayment__formGroup {
+  margin-top: 10px;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  transition: all 0.15s ease;
+  background-color: #eee;
+  border-radius: 5px;
+}
+
+/* On mouse-over, add a grey background color */
+/* .makePaymentForm__container:hover input ~ .checkmark {
+  background-color: #ccc;
+} */
+
+/* When the checkbox is checked, add a blue background */
+.makePayment__formGroup > .makePaymentForm__container input:checked ~ .checkmark {
+  background-color: var(--colorBlue);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.makePayment__formGroup > .makePaymentForm__container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.makePayment__formGroup > .makePaymentForm__container .checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 7px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}

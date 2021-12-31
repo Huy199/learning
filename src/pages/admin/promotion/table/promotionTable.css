@@ -1,0 +1,39 @@
+/* /* .promotionTable__container {
+  @apply w-full mb-3;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+.promotionTable__wrap {
+  @apply grid grid-cols-5 place-content-center;
+  height: 100%;
+  margin-left: 24px;
+  font-size: var(--fontSizeSmall);
+  /* line-height: 22px;
+  letter-spacing: 0.5px; 
+}*/
+/* 
+.promotionTable__header-title {
+  font-weight: 700;
+}
+
+.promotionTable-header__name,
+.promotionTable-header__price,
+.promotionTable-header__totalPay,
+.promotionTable-header__discount,
+.promotionTable-header__btn,
+.promotionTable__name,
+.promotionTable__price,
+.promotionTable__totalPay,
+.promotionTable__discount,
+.promotionTable__btn {
+  @apply flex items-center;
+}
+
+.promotionTable__name {
+  @apply font-medium;
+  text-transform: uppercase;
+}
+
+.promotionTable__totalPay {
+  font-weight: bold;
+} */

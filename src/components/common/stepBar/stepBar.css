@@ -1,0 +1,62 @@
+.stepBar__container {
+  @apply w-full flex;
+}
+
+.stepBar__wrapper {
+  @apply w-1/3 relative;
+}
+
+.stepBar__progress {
+  @apply bg-white border-2 border-gray-200 rounded-full text-lg text-gray-400 flex items-center;
+  z-index: 10;
+  width: 24px;
+  height: 24px;
+}
+
+.stepBar__firstProgress {
+  @apply ml-0;
+}
+.stepBar__secondProgress {
+  @apply mx-auto;
+}
+.stepBar__thirdProgress {
+  @apply float-right;
+}
+
+.stepBar__progress-text {
+  @apply text-center w-full;
+  font-weight: bold;
+  font-size: var(--fontSizeTiny);
+  line-height: 150%;
+  letter-spacing: 0.5px;
+}
+.stepBar_bar__left {
+  @apply absolute flex;
+  width: 121%;
+  top: 50%;
+  transform: translate(-68%, -50%);
+  z-index: 0;
+}
+.stepBar_bar__right {
+  @apply absolute flex;
+  width: 120%;
+  top: 50%;
+  transform: translate(51%, -50%);
+}
+.stepBar_bar-container {
+  @apply w-full bg-gray-200 items-center flex-1;
+  height: 2px;
+}
+.stepBar_bar--active {
+  background-color: var(--colorBlueAdmin) !important;
+}
+
+.stepBar__progress-inprogress {
+  border: 1px solid var(--colorBlueAdmin);
+  background-color: var(--colorBlueAdmin);
+  color: #ffffff;
+}
+.stepBar__progress-passed {
+  border-color: var(--colorBlueAdmin) !important;
+  color: var(--colorBlueAdmin) !important;
+}

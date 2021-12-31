@@ -1,0 +1,69 @@
+.dropdownStudentPage__header {
+  @apply relative inline-block text-left;
+  margin-right: 10px;
+}
+
+.dropdownStudentPage__info__status {
+  @apply flex items-center justify-center;
+  background: #80bbfd;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+.dropdownStudentPage__info__status p,
+.dropdownStudentPage__arrowDown {
+  font-size: var(--fontSizeSmall);
+  color: #fff;
+}
+.dropdownStudentPage__info__status p {
+  font-weight: bold;
+}
+.dropdownStudentPage__arrowDown {
+  @apply -mr-1 ml-2 h-8 w-8;
+}
+
+.dropdownStudentPage__info__content {
+  @apply origin-top-right  mt-2 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none;
+  position: absolute;
+  z-index: 1001;
+  right: 0;
+  font-size: var(--fontSizeSmall);
+  color: var(--colorText);
+  width: 272px;
+  margin-top: 5px;
+  overflow: hidden;
+}
+
+.dropdownStudentPage__info__header {
+  color: #999;
+}
+.dropdownStudentPage__info__adminName {
+  margin-left: 5px;
+  color: black;
+}
+.dropdownStudentPage__info__header__decs {
+  margin: 0;
+}
+.dropdownStudentPage__info__detail {
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+.dropdownStudentPage__info__detail:hover,
+.dropdownStudentPage__info__logout:hover {
+  background-color: #edeff0;
+}
+.dropdownStudentPage__info__logout {
+  border-top: 1px solid var(--colorBlue);
+  line-height: 1.4;
+  cursor: pointer;
+}
+.dropdownStudentPage__info__logout > button {
+  padding: 8px 20px;
+}
+.dropdownStudentPage__info__home__icon {
+  width: 15px;
+  display: inline;
+  color: #999;
+  margin-right: 8px;
+}

@@ -1,0 +1,46 @@
+.studentCourseTable {
+  @apply w-full mb-3;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+.studentCourseTable .wrapper {
+  @apply grid grid-cols-5 place-content-center;
+  height: 100%;
+  margin-left: 24px;
+  font-size: var(--fontSizeSmall);
+  line-height: 22px;
+  letter-spacing: 0.5px;
+}
+.courseStudentTable__header-title {
+  height: 48px;
+  font-weight: 700;
+}
+
+.studentCourseTable .name {
+  @apply flex items-center;
+  height: 100%;
+}
+
+.studentCourseTable .img {
+  @apply mr-3;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.studentCourseTable .teaches {
+  @apply flex items-center justify-center;
+  height: 100%;
+}
+.studentCourseTable .lessons {
+  @apply flex items-center justify-center;
+  height: 100%;
+}
+.studentCourseTable .status {
+  @apply flex items-center justify-center;
+  height: 100%;
+}
+.studentCourseTable .date {
+  @apply flex items-center justify-center;
+  height: 100%;
+}

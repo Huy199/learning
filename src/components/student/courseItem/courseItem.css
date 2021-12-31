@@ -1,0 +1,130 @@
+#courseItem {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#courseItem .bodyItem {
+  margin-bottom: 16px;
+}
+#courseItem .itemInfo {
+  padding: 16px;
+  background: #fff;
+  border-radius: 4px;
+  color: var(--colorText);
+  text-decoration: none;
+  z-index: 0;
+  position: relative;
+}
+#courseItem .itemContent {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+/* avatar */
+#courseItem .contentAvatar {
+  display: flex;
+  flex-direction: column;
+  width: 160px;
+  height: 160px;
+  margin-right: 16px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+#courseItem .contentBadge {
+  font-size: var(--fontSizeTiny);
+  background-color: var(--colorGreen);
+  color: #fff;
+  text-align: center;
+  z-index: 1;
+}
+#courseItem .avatarWrap {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+#courseItem .contentTitle {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  flex: 1 0 0;
+}
+#courseItem .content_titleLeft {
+  display: inline;
+  flex: 1 1 90%;
+  margin-right: 20px;
+}
+#courseItem .info_titleText {
+  @apply mb-4;
+}
+#courseItem .info_titleText h2 {
+  font-size: var(--fontSizeMedium);
+  font-weight: 600;
+}
+#courseItem .info_titleText p {
+  font-size: var(--fontSizeTiny);
+}
+#courseItem .content_titleRight {
+  flex: 1 1 50%;
+}
+#courseItem .content_headerRight {
+  font-size: var(--fontSizeTiny);
+  margin: 15px 0;
+  text-align: right;
+}
+#courseItem .content_mainRight {
+  display: flex;
+  font-size: var(--fontSizeTiny);
+}
+#courseItem .content_mainBtnApply {
+  margin-left: 20px;
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  border: 0;
+  align-items: center;
+  min-height: 32px;
+  font-size: var(--fontSizeSmall);
+  line-height: 1;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 2px;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 100%;
+  width: 100%;
+  cursor: pointer;
+  outline: 0;
+  transition: background-color 50ms;
+  color: #fff;
+  background-color: var(--colorBlue);
+  padding: 8px 16px;
+}
+
+#courseItem .content_mainBtnView {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  border: 1px solid var(--colorBlue);
+  align-items: center;
+  min-height: 32px;
+  font-size: var(--fontSizeSmall);
+  line-height: 1;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 2px;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 100%;
+  width: 100%;
+  cursor: pointer;
+  outline: 0;
+  transition: background-color 50ms;
+  color: var(--colorBlue);
+  background-color: #fff;
+  padding: 8px 16px;
+}

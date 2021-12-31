@@ -1,0 +1,124 @@
+#studentNotify .title {
+  padding: 28px 32px;
+  border-bottom: 1px solid #ccc;
+}
+
+#studentNotify .title > h2 {
+  font-size: var(--fontSizeLarge);
+}
+
+#studentNotify .content {
+  @apply flex flex-col;
+  gap: 15px;
+  padding: 32px;
+  border-bottom: 1px solid #ccc;
+}
+
+#studentNotify .item-title {
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-size: var(--fontSizeMedium);
+}
+
+#studentNotify .item-formGroup {
+  @apply flex items-center;
+}
+
+#studentNotify .checkbox__label > h6 {
+  font-size: var(--fontSizeSmall);
+  color: var(--colorText);
+  margin-bottom: 5px;
+}
+
+#studentNotify .checkbox__label > span {
+  display: block;
+  font-size: var(--fontSizeTiny);
+  color: var(--colorText);
+}
+
+#studentNotify .btnSubmit {
+  @apply flex items-center justify-center;
+  padding: 10px;
+}
+
+#studentNotify .btnSubmit > button {
+  background: var(--colorBlue);
+  color: #fff;
+  border-color: var(--colorBlue);
+  padding: 11px 16px;
+  border-radius: 2px;
+  text-align: center;
+  font-weight: 500;
+  font-size: var(--fontSizeSmall);
+}
+
+/* custom check box */
+
+#studentNotify .container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+#studentNotify .item-formGroup > .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+#studentNotify .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border-radius: 5px;
+  transition: all 0.15s ease;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+/* .container:hover input ~ .checkmark {
+  background-color: #ccc;
+} */
+
+/* When the checkbox is checked, add a blue background */
+#studentNotify .item-formGroup > .container input:checked ~ .checkmark {
+  background-color: var(--colorBlue);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+#studentNotify .checkmark:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+#studentNotify .item-formGroup > .container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+#studentNotify .item-formGroup > .container .checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 7px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}

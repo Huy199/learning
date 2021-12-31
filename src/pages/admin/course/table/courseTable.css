@@ -1,0 +1,55 @@
+.adminCourseTable {
+  @apply w-full mb-3;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+.adminCourseTable .wrapper {
+  @apply grid grid-cols-6 place-content-center;
+  height: 100%;
+  margin-left: 24px;
+  font-size: var(--fontSizeSmall);
+  line-height: 22px;
+  letter-spacing: 0.5px;
+}
+.courseTable__header-title {
+  height: 48px;
+  font-weight: 700;
+}
+
+.adminCourseTable .name {
+  @apply flex items-center;
+  height: 100%;
+}
+
+.adminCourseTable .img {
+  @apply mr-3;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.adminCourseTable .teaches {
+  @apply flex items-center;
+  height: 100%;
+}
+.adminCourseTable .total-student {
+  @apply flex items-center;
+  height: 100%;
+}
+.adminCourseTable .lessons {
+  @apply flex items-center justify-center;
+  height: 100%;
+}
+.adminCourseTable .money {
+  @apply flex items-center justify-center;
+  height: 100%;
+}
+.adminCourseTable .total {
+  @apply flex items-center justify-center;
+  height: 100%;
+}
+
+/* style icon */
+.adminCourseTable .dataNull {
+  filter: opacity(0.3);
+}

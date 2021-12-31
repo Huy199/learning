@@ -1,0 +1,14 @@
+#tutorRole .landing__header-container {
+  color: black;
+}
+#tutorRole .headerWrap .landing__header {
+  position: unset;
+  color: var(--colorText);
+}
+
+#tutorRole .headerWrap .dropdown__btn {
+  color: var(--colorText);
+}
+#tutorRole .headerWrap .hamburger__icon {
+  filter: brightness(0);
+}

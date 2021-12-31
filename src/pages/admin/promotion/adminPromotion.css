@@ -1,0 +1,215 @@
+#adminPromotion .filter-search {
+  @apply flex justify-end items-center;
+}
+.adminPromotion__container {
+  @apply h-full w-full relative;
+  padding: 3vh 62px 0;
+}
+
+.adminPromotion__header {
+  @apply grid grid-cols-7 relative items-center py-6 px-10;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  margin-top: 7.5px;
+  font-size: var(--fontSizeSmall);
+}
+
+.adminPromotion__totalPromotion {
+  font-style: normal;
+  font-weight: 700;
+  font-size: var(--fontSizeLarge);
+  line-height: 1.4;
+}
+
+#adminPromotion .createBtn_promotion {
+  margin-left: 10px;
+  height: 4rem;
+  width: 4rem;
+}
+#adminPromotion .btn_promotion {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--colorBlueAdmin);
+  box-shadow: 0 24px 32px 6px rgb(82 82 152 / 6%);
+  border-radius: 8px;
+}
+
+.adminPromotion__header-item-name {
+  @apply col-span-1;
+}
+.adminPromotion__header-item-code {
+  @apply col-span-1;
+}
+
+.adminPromotion__header-item-price {
+  @apply col-span-1 text-center;
+}
+
+.adminPromotion__header-item-status {
+  @apply col-span-1 text-center;
+}
+
+.adminPromotion__header-item-points {
+  @apply col-span-1 text-center;
+}
+
+.adminPromotion__header-item-bought {
+  @apply text-center col-span-1;
+}
+
+.adminPromotion__accordion-item-name {
+  @apply col-span-3;
+}
+
+.adminPromotion__accordion-item-code {
+  @apply col-span-3;
+}
+
+.adminPromotion__accordion-item-price {
+  @apply col-span-1;
+}
+
+.adminPromotion__accordion-item-points {
+  @apply col-span-2;
+}
+
+.adminPromotion__accordion-item-status {
+  @apply col-span-2;
+  position: relative;
+}
+.adminPromotion__accordion-item-bought {
+  @apply col-span-1;
+}
+.adminPromotion__item {
+  margin-bottom: 5px;
+  border-radius: 8px;
+}
+.adminPromotion__item .btnIcon-status {
+  display: none;
+}
+
+.adminPromotion__form-header {
+  @apply flex items-center justify-between;
+  padding: 5px 22.5px;
+  border: 1px solid #e5e7eb;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  font-weight: bold;
+  margin-top: 7.5px;
+  font-size: var(--fontSizeSmall);
+}
+
+.adminPromotion__accordion {
+  @apply grid grid-cols-7 list-none px-9;
+  border: 1px solid #e5e7eb;
+  border-top: none;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.adminPromotion__accordion li {
+  @apply flex flex-col font-medium py-8;
+}
+
+.adminPromotion__accordion-item-label {
+  @apply font-medium;
+  font-size: var(--fontSizeSmall);
+}
+
+.adminPromotion__input,
+.adminPromotion__select {
+  border: 1px solid #9ca3af;
+  border-radius: 8px;
+  margin-top: auto;
+  padding: 7px 10px;
+  font-size: var(--fontSizeSmall);
+  font-weight: 500;
+  width: 80%;
+}
+
+.adminPromotion__select {
+  margin-top: 7px;
+  padding: 6px;
+  margin-right: 10px;
+  width: 92px;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.adminPromotion__select option {
+  font-size: var(--fontSizeSmall);
+  padding: 5px;
+}
+
+.adminPromotion__input:focus,
+.adminPromotion__select:focus {
+  outline: 1px solid #000;
+}
+
+.adminPromotion__input:disabled,
+.adminPromotion__select:disabled {
+  font-weight: normal;
+  padding-left: 0;
+  border: none;
+  outline: 0;
+  background-color: unset;
+  border-radius: unset;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 8px;
+}
+
+.adminPromotion__select:disabled {
+  padding-bottom: 5px;
+}
+.adminPromotion__open-btn {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.adminPromotion__title-btn,
+.adminPromotion__open-btn {
+  cursor: pointer;
+  @apply flex items-center;
+}
+
+.adminPromotion__btn-item {
+  @apply flex items-center justify-center;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+}
+.adminPromotion__btn-item:hover {
+  cursor: pointer;
+  background: rgba(238, 238, 241, 0.85);
+  border-radius: 50%;
+}
+.adminPromotion__btn-item .btnName {
+  font-size: var(--fontSizeSmall);
+}
+
+.adminPromotion__btn-item .edit {
+  color: #0000ff;
+}
+.adminPromotion__btn-item .cancel {
+  color: #6b72a1;
+  font-weight: 500;
+}
+.adminPromotion__btn-item .delete {
+  color: #ff0000;
+}
+.adminPromotionAccordionContainer {
+  overflow-y: overlay;
+  height: calc(100vh - 340px);
+}
+.adminPromotion__btn-item .save {
+  color: #3575d7;
+}
+.btnIcon-status-active {
+  position: absolute;
+  top: 43.6px;
+  right: 10.5px;
+}

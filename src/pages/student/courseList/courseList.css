@@ -1,0 +1,64 @@
+#studentCourse {
+  width: 100%;
+  padding: 3vh 62px 40px;
+}
+#studentCourse .body {
+  overflow: hidden;
+  max-width: 1280px;
+  margin: auto;
+}
+#studentCourse .filter-search {
+  @apply mb-2 flex justify-end items-center;
+}
+.adminCourse__container {
+  @apply w-full relative;
+  padding: 3vh 62px 0;
+}
+
+#studentCourse .body {
+  @apply w-full  flex flex-col;
+  overflow: hidden;
+  max-width: 1280px;
+  margin: auto;
+}
+#studentCourse .wrap_content {
+  @apply w-full flex-1 flex flex-col;
+}
+#studentCourse .content_header {
+  @apply flex justify-between items-center;
+  max-height: 2.5rem;
+}
+#studentCourse .number_course {
+  font-style: normal;
+  font-weight: 700;
+  font-size: var(--fontSizeLarge);
+  line-height: 1.4;
+  letter-spacing: 0.5px;
+}
+.contentHeader__createBtn-tutor {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+.contentHeader__btn-tutor {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--colorBlue);
+  box-shadow: 0 24px 32px 6px rgb(82 82 152 / 6%);
+  border-radius: 8px;
+}
+
+.content_table {
+  margin-top: 16px;
+  width: 100%;
+}
+#studentCourse .item_course {
+  overflow-y: overlay;
+  height: calc(100vh - 405px);
+}
+#studentCourse .pagination {
+  margin-bottom: 50px;
+}
+

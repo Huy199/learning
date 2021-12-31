@@ -1,0 +1,225 @@
+.promotionCard__container {
+  @apply flex flex-wrap items-center;
+  padding: 32px 32px 8px;
+  gap: 20px;
+}
+
+.promotionCard-title__wrapper {
+  @apply flex items-center flex-col text-center;
+  padding: 0 32px;
+}
+
+.promotionCard__title {
+  font-size: var(--fontSizeLarge);
+  font-weight: 500;
+  line-height: 1.3;
+  margin-bottom: 8px;
+}
+
+.promotionCard__subtitle {
+  font-size: var(--fontSizeTiny);
+  opacity: 0.65;
+  margin-top: 4px;
+}
+
+.promotionCard__item {
+  @apply flex-1  text-center p-6 relative;
+  color: var(--colorText);
+  box-shadow: 0 6px 16px 0 rgb(28 29 40 / 12%);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.promotionCard__Popular--active .promotionCard-popular {
+  display: block;
+}
+
+.promotionCard__item:not(.promotionCard-button__wrapper) {
+  @apply uppercase;
+}
+
+.promotionCard__item-info {
+  @apply flex flex-col;
+}
+
+.promotionCard-item-title__text {
+  @apply font-bold;
+  font-size: var(--fontSizeSmall);
+}
+
+.promotionCard-item-title__subtitle {
+  font-size: var(--fontSizeMedium);
+}
+.promotionCard-priceTag__subscription-wrapper {
+  @apply flex items-start justify-center;
+}
+
+.promotionCard-subscription__currency {
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 40px;
+}
+.promotionCard-subscription__price {
+  font-size: 62px;
+  font-weight: 700;
+  line-height: 70px;
+}
+
+.promotionCard-subscription__perTime {
+  @apply normal-case opacity-60 text-center;
+  font-size: var(--fontSizeTiny);
+}
+
+.promotionCard-priceTag__pay-text {
+  @apply font-medium;
+  font-size: var(--fontSizeSmall);
+}
+
+.promotionCard-priceTag__discount__text {
+  @apply font-semibold;
+  font-size: var(--fontSizeTiny);
+  color: var(--colorBlue);
+}
+
+.promotionCard-priceTag__pay,
+.promotionCard-priceTag__subscription-wrapper,
+.promotionCard-priceTag__discount__text,
+.promotionCard-button__wrapper {
+  margin-top: 10px;
+}
+
+.promotionCard-button__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.promotionCard-button__item {
+  @apply inline-flex items-center justify-center;
+  padding: 7px 28px;
+  border: 2px solid rgba(26, 27, 33, 0.84);
+  outline: none;
+  font-size: var(--fontSizeSmall);
+  font-weight: 700;
+  border-radius: 30px;
+}
+
+.promotionCard-popular {
+  @apply absolute;
+  z-index: 9;
+  top: 0;
+  right: 0;
+
+  width: 68px;
+  height: 68px;
+
+  border-width: 0px 68px 68px 0px;
+  border-style: solid;
+  border-color: transparent var(--colorBlue) transparent transparent;
+
+  display: none;
+}
+
+.promotionCard-popular__text {
+  display: inline-flex;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: var(--fontSizeTiny);
+  font-weight: bold;
+  transform: rotate(45deg);
+  text-align: center;
+  margin-top: 6px;
+  margin-left: 33px;
+  line-height: 1.4;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 80em) {
+  .promotionCard__container {
+    @apply flex-col;
+  }
+
+  .promotionCard__item {
+    text-align: left;
+    max-width: 400px;
+  }
+
+  .promotionCard-item-title__wrapper {
+    text-align: left;
+  }
+
+  .promotionCard__item-info {
+    @apply flex-row justify-between;
+    padding-right: 20px;
+  }
+
+  .promotionCard-item-title__subtitle {
+    font-size: var(--fontSizeMedium);
+  }
+
+  .promotionCard-priceTag__pay-text {
+    font-size: var(--fontSizeSmall);
+  }
+
+  .promotionCard-subscription__currency {
+    font-size: var(--fontSizeLarge);
+    line-height: 32px;
+  }
+
+  .promotionCard-subscription__price {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  .promotionCard-subscription__perTime {
+    font-size: var(--fontSizeTiny);
+  }
+
+  .promotionCard-button__item {
+    width: 100%;
+    padding: 6px 40px;
+  }
+}
+
+@media only screen and (max-width: 20em) {
+  .promotionCard-item-title__text {
+    font-size: var(--fontSizeSmall);
+  }
+
+  .promotionCard-item-title__subtitle {
+    font-size: var(--fontSizeTiny);
+  }
+
+  .promotionCard-priceTag__pay-text {
+    font-size: 11px;
+  }
+
+  .promotionCard-subscription__currency {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .promotionCard-subscription__price {
+    font-size: 34px;
+    line-height: 40px;
+  }
+
+  .promotionCard-subscription__perTime {
+    font-size: 10px;
+  }
+
+  .promotionCard-button__item {
+    padding: 3px 6px;
+  }
+
+  .promotionCard-button__name {
+    font-size: var(--fontSizeTiny);
+  }
+
+  .productCard__button-arrow {
+    width: 18;
+    height: 19;
+  }
+}

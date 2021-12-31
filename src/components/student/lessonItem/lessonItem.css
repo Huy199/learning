@@ -1,0 +1,112 @@
+#lessonItem {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#lessonItem .bodyItem {
+  margin-bottom: 16px;
+}
+#lessonItem .itemInfo {
+  padding: 16px;
+  background: #fff;
+  border-radius: 4px;
+  color: var(--colorText);
+  text-decoration: none;
+  z-index: 0;
+  position: relative;
+}
+#lessonItem .itemContent {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+/* avatar */
+#lessonItem .contentAvatar {
+  display: flex;
+  flex-direction: column;
+  width: 160px;
+  height: 160px;
+  margin-right: 16px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+#lessonItem .contentBadge {
+  font-size: var(--fontSizeTiny);
+  background-color: var(--colorGreen);
+  color: #fff;
+  text-align: center;
+  z-index: 1;
+}
+#lessonItem .avatarWrap {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+#lessonItem .contentTitle {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  flex: 1 0;
+}
+#lessonItem .content_titleLeft {
+  display: inline;
+  flex: 1 1 90%;
+  margin-right: 20px;
+}
+#lessonItem .info_titleText {
+  @apply mb-4;
+}
+#lessonItem .info_titleText h2 {
+  font-size: var(--fontSizeMedium);
+  font-weight: 600;
+}
+#lessonItem .info_titleText p {
+  font-size: var(--fontSizeTiny);
+}
+#lessonItem .content_titleRight {
+  display: flex;
+  margin-left: auto;
+  flex: 1 1 50%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+#lessonItem .content_headerRight {
+  font-size: var(--fontSizeTiny);
+  display: flex;
+  justify-content: space-around;
+  margin-right: 20px;
+}
+#lessonItem .content_mainRight {
+  font-size: var(--fontSizeTiny);
+  display: flex;
+  justify-content: space-around;
+}
+#lessonItem .content_mainBtn {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  border: 0;
+  align-items: center;
+  min-height: 32px;
+  font-size: var(--fontSizeSmall);
+  line-height: 1;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 2px;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 100%;
+  width: 100%;
+  cursor: pointer;
+  outline: 0;
+  transition: background-color 50ms;
+  color: #fff;
+  background-color: var(--colorBlue);
+  padding: 8px 16px;
+}

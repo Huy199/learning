@@ -1,0 +1,43 @@
+#courseFilter {
+  width: 200px;
+  position: relative;
+  border: 1px solid #e5e7eb;
+  padding: 9px;
+
+  border-radius: 5px;
+}
+
+#courseFilter .filter__btn {
+  @apply flex items-center justify-between w-full;
+}
+
+#courseFilter .filter__btn > span {
+  font-size: var(--fontSizeTiny);
+}
+
+#courseFilter .filter-dropdown__wrapper {
+  position: absolute;
+  z-index: 99;
+  top: 38px;
+  left: -1px;
+  width: 200px;
+  border: 1px solid #e5e7eb;
+  background: white;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+#courseFilter .filter-dropdown__item {
+  @apply w-full p-2 cursor-pointer;
+  font-size: var(--fontSizeSmall);
+  height: 31px;
+}
+#courseFilter .filter-dropdown__item-border {
+  border-bottom: 0.5px solid #e5e7eb;
+}
+
+#courseFilter .filter-dropdown__item:hover {
+  background: var(--colorBlueAdmin);
+  border-radius: 3px;
+
+  color: #fff;
+}

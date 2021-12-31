@@ -1,0 +1,31 @@
+.search__wrapper {
+  @apply flex items-center justify-between;
+ 
+  height: 40px;
+  border-radius: 8px;
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #e5e7eb;
+}
+
+.search__wrapper:focus-within {
+  border: 1px solid var(--colorBlueAdmin);
+}
+
+.search__input {
+  display: block;
+  min-width: 212px;
+  border: none;
+  outline: 0;
+  padding: 5px;
+  font-size: var(--fontSizeTiny);
+}
+
+.search__icon {
+  @apply flex items-center justify-center cursor-pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  color: var(--colorBlueAdmin);
+  background: #fff;
+}

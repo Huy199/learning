@@ -1,0 +1,46 @@
+#document {
+  height: 660px;
+  position: relative;
+  background: #fff;
+  padding: 0 32px 32px;
+  z-index: 1;
+  border-radius: 0 0 8px 8px;
+}
+#document .filter-search {
+  @apply mb-2 flex justify-end items-center;
+  margin-top: 20px;
+}
+/* table header*/
+#document .table__header-container {
+  @apply w-full flex;
+  border-bottom: 1px solid #dadce0;
+}
+#document .table__header {
+  @apply grid grid-cols-12 items-center w-full;
+  font-size: var(--fontSizeSmall);
+  line-height: 22px;
+  letter-spacing: 0.5px;
+  height: 48px;
+}
+#document .table__title-name {
+  @apply col-span-8 flex;
+}
+
+#document .table__title-date {
+  @apply col-span-2;
+}
+#document .table__title-size {
+  @apply col-span-2;
+}
+/*table item*/
+#document .table__item {
+  height: calc(660px - 80px);
+  overflow: overlay;
+}
+#document .pdfIcon {
+  @apply w-9 h-9;
+  background-color: red;
+  padding: 2px;
+  border-radius: 3px;
+  margin-right: 10px;
+}

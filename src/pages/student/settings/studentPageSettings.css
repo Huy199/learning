@@ -1,0 +1,47 @@
+#studentPageSettings {
+  background-color: #edeff0;
+  height: 100%;
+  min-height: 90vh;
+}
+
+#studentPageSettings .container {
+  @apply flex;
+
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+#studentPageSettings .left {
+  @apply flex flex-col;
+  min-width: 215px;
+  margin-right: 10px;
+  padding: 32px 0;
+}
+
+#studentPageSettings .route {
+  @apply block;
+  font-weight: 600;
+  padding: 12px 16px;
+  color: #6f757b;
+}
+#studentPageSettings .route:hover {
+  color: #384047;
+}
+#studentPageSettings .route-active {
+  background: #dadfe1;
+  color: #384047;
+}
+
+#studentPageSettings .route > span {
+  font-size: var(--fontSizeSmall);
+}
+
+#studentPageSettings .right {
+  width: 752px;
+  padding: 32px;
+}
+
+#studentPageSettings .right__wrapper {
+  background-color: #fff;
+  border-radius: 5px;
+}

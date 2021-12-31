@@ -1,0 +1,166 @@
+.landing__header {
+  @apply w-screen place-content-center px-8 py-5 absolute;
+  color: var(--colorText);
+  width: 100vw;
+  z-index: 1;
+}
+.landing__header__container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  z-index: 0;
+}
+.landing__header__left {
+  display: flex;
+  align-items: center;
+}
+.landing__header__left-logo {
+  display: flex;
+}
+.landing__header__left-logo > img {
+  width: 99px;
+}
+
+.landing__header__left-container {
+  display: flex;
+  margin-left: 40px;
+  font-size: var(--fontSizeSmall);
+  letter-spacing: var(--letterSpacingLink);
+  line-height: var(--lineHeightLink);
+  font-weight: var(--fontWeightLink);
+}
+.landing__header__left-item {
+  margin-right: 20px;
+}
+.landing__header__left-item :hover {
+  color: var(--linkHoverColor);
+}
+.landing__header__left-item-active {
+  color: var(--colorBlue) !important;
+  font-size: var(--fontSizeSmall);
+  letter-spacing: var(--letterSpacingLink);
+  line-height: var(--lineHeightLink);
+  font-weight: var(--fontWeightLink);
+}
+.landing__header__right {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.landing__header__rightBuyHours {
+  margin-right: 24px;
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  border: 0;
+  min-height: 36px;
+  align-items: center;
+  font-size: var(--fontSizeSmall);
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 6px;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 100%;
+  cursor: pointer;
+  outline: 0;
+  transition: background-color 50ms;
+  color: #fff;
+  background-color: var(--colorBlue);
+  padding: 8px 16px;
+}
+.landing__header__rightDropdown {
+  display: flex;
+  align-items: center;
+  margin-right: 12px;
+}
+
+.landing__header__right-login {
+  display: flex;
+  margin-right: 15px;
+  align-items: center;
+  font-size: var(--fontSizeSmall);
+}
+.landing__header__right-login > img {
+  margin-right: 10px;
+  filter: brightness(200%);
+}
+.landing__header__hamburger-menu {
+  display: none;
+}
+
+@media only screen and (max-width: 59em) {
+  .landing__header__left-container {
+    display: none;
+  }
+  .landing__header__left-logo::after {
+    display: none;
+  }
+  .landing__header__right-login {
+    display: none;
+  }
+  .landing__header__rightDropdown::after {
+    display: none;
+  }
+  .landing__header__hamburger-menu {
+    display: block;
+    margin-left: 32px;
+  }
+}
+
+@media only screen and (max-width: 48em) {
+  .landing__header {
+    padding: 20px 24px;
+  }
+}
+@media only screen and (max-width: 31em) {
+  .landing__header {
+    padding: 0 16px;
+  }
+  .landing__header__hamburger-menu {
+    margin-left: 16px;
+  }
+}
+.landing__header__payment,
+.landing__header__notification,
+.landing__header__help {
+  margin-right: 12px;
+}
+
+.landing__header__btn__icon,
+.landing__header__btn__helpIcon {
+  position: relative;
+  padding: 8px;
+}
+.landing__header__icon {
+  width: 30px;
+}
+.landing__header__ring-number {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background-color: var(--colorBlue);
+  top: 0;
+  right: 0;
+}
+.landing__header__ring-number > span {
+  line-height: 14px;
+  font-weight: 700;
+  font-size: var(--fontSizeTiny);
+  color: #ffffff;
+}
+.landing__header__btn__ring__icon:hover {
+  cursor: pointer;
+  background: rgba(238, 238, 241, 0.85);
+  border-radius: 20px;
+}
+
+.studentPage__info__dropdownAvt {
+  @apply relative;
+}

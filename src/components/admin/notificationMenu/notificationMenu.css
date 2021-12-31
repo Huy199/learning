@@ -1,0 +1,103 @@
+#notificationsAdmin .notify__container {
+  @apply h-screen absolute flex flex-col;
+  font-size: var(--fontSizeMedium);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 450px;
+  background: #fff;
+  animation: slideModal 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+  position: absolute;
+  z-index: 1001;
+}
+#notificationsAdmin .notifyMenu__container-animation {
+  animation: slideModalOut 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+@keyframes slideModalOut {
+  0% {
+    /* right: 0; */
+    transform: translateX(0);
+  }
+  100% {
+    /* right: -620px; */
+    transform: translateX(620px);
+  }
+}
+
+@keyframes slideModal {
+  0% {
+    /* right: -520px; */
+    transform: translateX(520px);
+  }
+  100% {
+    /* right: 0; */
+    transform: translateX(0);
+  }
+}
+
+#notificationsAdmin .notify__header {
+  @apply flex justify-end items-center;
+  padding: 20px;
+  height: 70px;
+  border-bottom: 1px solid #fff;
+}
+#notificationsAdmin .notify__btn-cancel {
+  @apply flex flex-col justify-center;
+  border-radius: 50%;
+  padding: 10px;
+  color: rgba(255, 255, 255, 0.8);
+}
+#notificationsAdmin .notify__btn-cancel:hover {
+  cursor: pointer;
+  background: rgba(238, 238, 241, 0.85);
+}
+.hamburgerMenu__body {
+  @apply flex flex-col flex-1 w-full p-6;
+  color: #fff;
+}
+.hamburger__body-menuItem {
+  margin-top: 12px;
+  @apply flex flex-col;
+  font-size: var(--fontSizeLink);
+  letter-spacing: var(--letterSpacingLink);
+  line-height: var(--lineHeightLink);
+  font-weight: var(--fontWeightLink);
+}
+
+.hamburger__menuOption-item .arrow_down-icon {
+  top: 27px;
+}
+#notificationsAdmin .notify__ring__icon {
+  width: 30px;
+}
+#notificationsAdmin .notify__title {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+#notificationsAdmin .notify__title > p {
+  margin-left: 10px;
+  font-weight: 700;
+  font-size: var(--fontSizeMedium);
+  line-height: 1.4;
+  color: var(--colorText);
+}
+#notificationsAdmin .notify__setting__icon {
+  margin-right: 10px;
+  width: 20px;
+  display: inline;
+}
+#notificationsAdmin .notify__setting {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-top: auto;
+  padding: 20px;
+}
+#notificationsAdmin .notify__setting > span {
+  line-height: 1;
+  font-weight: 500;
+  color: var(--colorText);
+  font-size: var(--fontSizeSmall);
+}

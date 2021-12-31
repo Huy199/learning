@@ -1,0 +1,293 @@
+#register.container {
+  padding-top: 20px;
+  padding-bottom: 70px;
+  background: #edeff0;
+  min-height: calc(100vh - 428.24px);
+  display: flex;
+  align-items: center;
+}
+#register .container {
+  @apply mx-auto;
+  padding: 25px 28px 28px 28px;
+  max-width: 700px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgb(0 2 4 / 20%);
+}
+
+#register .header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#register .header-left {
+  flex: 1 1 auto;
+  font-size: var(--fontSizeLarge);
+  margin-right: auto;
+  line-height: 1;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+#register .header-right {
+  font-size: var(--fontSizeSmall);
+}
+#register .header-right a {
+  color: var(--colorBlue);
+  font-weight: 600;
+}
+#register .header-right span {
+  display: inline-block;
+  margin-bottom: 8px;
+}
+#register .header-right-or {
+  margin: 0 4px;
+  color: #999;
+}
+#register .separator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 24px;
+  height: 1px;
+  text-align: center;
+  background-color: #dadfe1;
+  color: #5c6268;
+}
+#register .social {
+  @apply mx-auto;
+  max-width: 310px;
+  margin-bottom: 24px;
+}
+#register .fb {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  background: #3d5188;
+  color: #fff;
+  border-color: #3d5188;
+}
+#register .fb-text {
+  flex: 1 1 100%;
+  font-size: var(--fontSizeSmall);
+  text-align: center;
+  line-height: 1;
+  font-weight: 600;
+}
+
+#register .google {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  margin-top: 16px;
+  background-color: #4285f4;
+  color: #ffffff;
+  border: none;
+}
+#register .google-text {
+  flex: 1 1 100%;
+  font-size: var(--fontSizeSmall);
+  text-align: center;
+  line-height: 1;
+  font-weight: 600;
+}
+#register .separator-text {
+  padding: 0 16px;
+  background-color: #fff;
+  font-size: var(--fontSizeSmall);
+  color: #999;
+}
+#register .form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+#register .form-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 16px;
+  margin-right: 55px;
+}
+#register .form-title {
+  width: 168px;
+  padding-right: 32px;
+  text-align: right;
+  margin-bottom: 0;
+  margin-top: 4px;
+  font-weight: 500;
+  font-size: var(--fontSizeSmall);
+}
+#register .form-input-wrapper {
+  width: 310px;
+  min-height: 28px;
+  padding-right: 24px;
+}
+#register .form-input {
+  width: 310px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+  border-radius: 3px;
+  transition: border linear 0.2s, box-shadow linear 0.2s;
+  display: inline-block;
+  height: 28px;
+  padding: 4px 8px;
+  font-size: var(--fontSizeSmall);
+}
+#register .form-forgotPassword {
+  margin-left: 24px;
+  margin-top: 7px;
+  color: var(--colorBlue);
+  text-decoration: none;
+  font-size: var(--fontSizeTiny);
+}
+#register .form-remember {
+  backface-visibility: hidden;
+  color: var(--colorText);
+  line-height: 1.42857143;
+  font-weight: 400;
+  font-size: var(--fontSizeSmall);
+}
+#register .form-remember-wrapper {
+  display: flex;
+  align-items: center;
+  margin-left: 168px;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+#register .form-checkbox-label {
+  position: relative;
+  padding-left: 5px;
+  color: var(--colorText);
+  min-height: 16px;
+  min-width: 16px;
+  display: inline-block;
+  vertical-align: top;
+  font-size: var(--fontSizeTiny);
+}
+#register .form-btn {
+  margin-left: 168px;
+  padding: 15px;
+  max-width: 308px;
+  height: auto;
+  font-size: var(--fontSizeSmall);
+  background: var(--colorBlue);
+  color: #fff;
+  border-color: var(--colorBlue);
+  width: 100%;
+  font-weight: 600;
+}
+@media only screen and (max-width: 44em) {
+  #register .header {
+    flex-direction: column;
+    align-items: center;
+  }
+  #register .header-left {
+    margin-right: 0;
+  }
+  #register .social {
+    margin-left: 16px;
+    margin-right: 16px;
+    max-width: 100%;
+  }
+  #register .form {
+    margin: 0 16px;
+  }
+  #register .form-title {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  #register .form-input-wrapper {
+    padding: 0;
+    width: 100%;
+  }
+  #register .form-input {
+    width: 100%;
+    height: 40px;
+  }
+  #register .form-forgotPassword {
+    margin-left: 0;
+    margin-top: 10px;
+    width: 100%;
+  }
+  #register .form-remember-wrapper {
+    margin-left: 0;
+    width: 100%;
+  }
+  #register .form-btn {
+    margin-left: 0;
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 20em) {
+  #register .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+#register .form-input-name {
+  width: 100%;
+  height: 40px;
+}
+#register .form-input-name {
+  width: 105px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+  border-radius: 3px;
+  transition: border linear 0.2s, box-shadow linear 0.2s;
+  display: inline-block;
+  height: 28px;
+  padding: 4px 8px;
+  font-size: var(--fontSizeSmall);
+}
+#register .form-title-name {
+  width: 168px;
+  padding-right: 32px;
+  text-align: right;
+  margin-bottom: 0;
+  margin-top: 4px;
+  font-weight: 500;
+  font-size: var(--fontSizeSmall);
+}
+#register .form-title-name {
+  width: 50px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+#register .form-input-wrapper-name {
+  width: 100px;
+  min-height: 28px;
+  padding-right: 24px;
+}
+#register .k-picker-wrap {
+  height: 28px;
+  align-items: center;
+  border: 1px solid #cccccc !important;
+  border-radius: 5px !important;
+  background-color: #ffffff !important;
+}
+#register .gender {
+  font-size: 12px;
+}
+#register .form-title-gender {
+  width: 168px;
+  padding-right: 32px;
+  text-align: right;
+  margin-bottom: 0;
+  padding-top: 8px;
+  margin-top: 4px;
+  font-weight: 500;
+  font-size: var(--fontSizeSmall);
+}
+#register .form-input-wrapper-gender {
+  width: 310px;
+  padding-right: 24px;
+  height: 25px;
+}

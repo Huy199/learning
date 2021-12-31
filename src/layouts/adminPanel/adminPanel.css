@@ -1,0 +1,22 @@
+.adminLayout__container {
+  @apply flex h-screen w-screen relative;
+}
+
+.sidebar__container {
+  @apply relative h-screen;
+  flex-basis: 12vw;
+}
+
+.adminBody__container {
+  @apply flex-1 overflow-y-auto;
+}
+
+.adminContent__container {
+  @apply flex flex-col relative flex-1;
+  height: calc(100vh - 82px);
+  padding: 0 24px;
+}
+.admin__notify {
+  position: relative;
+  z-index: 100;
+}

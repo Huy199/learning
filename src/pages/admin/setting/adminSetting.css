@@ -1,0 +1,42 @@
+.adminSetting__container {
+  @apply w-full relative mt-5;
+  padding: 3vh 62px 40px;
+  overflow-y: overlay;
+}
+.adminSetting__route {
+  align-items: center;
+  font-size: var(--fontSizeSmall);
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  padding-right: 16px;
+}
+.adminSetting__routes {
+  display: flex;
+  top: 45px;
+  position: fixed;
+  z-index: 2;
+  top: 80px;
+}
+.adminSetting__header-routes {
+  width: 100%;
+  background: #fff;
+  height: 42px;
+  position: fixed;
+  z-index: 99;
+  top: 75px;
+}
+.adminSetting__focus {
+  color: var(--colorBlueAdmin) !important;
+  font-weight: 700;
+  background-color: #e8f0fe;
+  border-radius: 5px;
+  padding: 8px;
+}
+.adminSetting__line {
+  position: fixed;
+  z-index: 1;
+  top: 85px;
+  width: 56.5%;
+  border-top: 1px solid rgba(46, 48, 73, 0.1);
+  margin: 32px 0;
+}

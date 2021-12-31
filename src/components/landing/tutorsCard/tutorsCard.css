@@ -1,0 +1,44 @@
+.tutors-card__container {
+  @apply grid grid-cols-2 gap-4 p-4;
+}
+.tutors-card_left {
+  @apply col-span-1 flex p-8;
+  border: 1px solid #f2f2f2;
+  min-height: 140px;
+  height: 100%;
+  align-items: center;
+  cursor: pointer;
+}
+.tutors_card-content {
+  @apply flex-1;
+}
+.tutors_card-icon {
+  @apply mr-8;
+}
+.card__content-title {
+  font-size: var(--fontSizeMedium);
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.75px;
+  color: var(--colorText);
+}
+.card__content-statistic {
+  color: var(--colorText);
+  font-size: var(--fontSizeTiny);
+  margin-top: 8px;
+}
+.tutors-card_right {
+  @apply col-span-1 flex p-8;
+  border: 1px solid #f2f2f2;
+  min-height: 140px;
+  height: 100%;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* responsive */
+@media only screen and (max-width: 31em) {
+  .tutors-card__container {
+    @apply grid grid-cols-1;
+  }
+}

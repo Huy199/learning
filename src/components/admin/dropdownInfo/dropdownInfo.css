@@ -1,0 +1,49 @@
+.dropdownInfo__header {
+  @apply relative inline-block text-left;
+}
+
+.dropdownInfo__info__status {
+  @apply flex items-center justify-center;
+  background: #80bbfd;
+  color: white;
+  border-radius: 50%;
+  font-weight: 500;
+  width: 32px;
+  height: 32px;
+}
+.dropdownInfo__info__status > p {
+  font-size: var(--fontSizeSmall);
+}
+
+.dropdownInfo__info__content {
+  @apply origin-top-right right-0 mt-2 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none;
+  width: 272px;
+  padding: 20px;
+  position: absolute;
+  z-index: 1001;
+}
+.dropdownInfo__info__header {
+  color: #999;
+  font-size: var(--fontSizeSmall);
+}
+.dropdownInfo__info__adminName {
+  margin-left: 5px;
+  color: black;
+}
+.dropdownInfo__info__header__decs {
+  margin: 0;
+  font-size: var(--fontSizeSmall);
+}
+.dropdownInfo__info__detail {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: var(--fontSizeSmall);
+  margin-top: 16px;
+}
+.dropdownInfo__info__home__icon {
+  @apply w-9 h-9;
+  display: inline;
+  color: #999;
+  margin-right: 8px;
+}

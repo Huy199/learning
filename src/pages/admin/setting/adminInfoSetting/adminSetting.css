@@ -1,0 +1,167 @@
+.adminSetting__info {
+  @apply w-full relative;
+  padding-top: 3vh;
+  overflow-y: overlay;
+  padding-left: 0px;
+}
+.adminSetting__header {
+  font-size: 18px;
+  font-weight: 550;
+}
+.adminSetting__row-select-picture {
+  display: flex;
+}
+.adminSetting__select-picture {
+  flex: 3;
+  margin-top: 16px;
+}
+.adminSetting__name-picture {
+  margin-bottom: 12px;
+  font-size: var(--fontSizeSmall);
+  font-weight: 400;
+  color: var(--colorText);
+}
+.adminSetting__edit-picture {
+  display: flex;
+  position: relative;
+}
+.adminSetting__btn-add {
+  position: absolute;
+  background-color: #f3f4f6;
+  top: 66px;
+  left: 74px;
+  height: 30px;
+  padding: 7px;
+  border-radius: 8px;
+}
+.adminSetting__picture {
+  width: auto;
+  height: 110px;
+  border-radius: 6px;
+}
+.adminSetting__desc-picture {
+  margin-left: 20px;
+}
+.adminSetting__name-desc {
+  font-size: var(--fontSizeSmall);
+  width: 475px;
+  font-weight: 400;
+  color: var(--colorText);
+  line-height: 20px;
+}
+.adminSetting__btn-desc {
+  display: flex;
+  margin-top: 29px;
+}
+.adminSetting__btn-select {
+  display: flex;
+  width: 180px;
+  height: 30px;
+  color: #fff;
+  background: var(--colorBlueAdmin);
+  border-radius: 20px;
+  justify-content: center;
+  padding-top: 7px;
+}
+.adminSetting__btn-download {
+  display: flex;
+  width: 180px;
+  height: 30px;
+  background: #fff;
+  color: var(--colorBlueAdmin);
+  border-radius: 20px;
+  justify-content: center;
+  padding-top: 7px;
+}
+.adminSetting__name-btn-select {
+  font-size: var(--fontSizeSmall);
+}
+.adminSetting__icon-download-btn {
+  width: 34px;
+  height: 27px;
+  margin-top: -4px;
+}
+.adminSetting__suggest {
+  flex: 1;
+  display: flex;
+  margin-left: 15%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.adminSetting__icon-suggest {
+  color: #b6b7c0;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 5px;
+}
+.adminSetting__text-suggest {
+  padding-top: 10px;
+  padding-left: 10px;
+  font-size: var(--fontSizeTiny);
+  color: #b6b7c0;
+}
+.adminSetting__hr {
+  border: 0;
+  height: 0;
+  width: 56.5%;
+  border-top: 1px solid rgba(46, 48, 73, 0.1);
+  margin: 32px 0;
+}
+.adminSetting__edit-info {
+  display: flex;
+}
+.adminSetting__edit-phone {
+  display: flex;
+}
+.adminSetting__info {
+  flex: 3;
+}
+.adminSetting__phone {
+  flex: 3;
+}
+.adminSetting__name {
+  display: flex;
+}
+.adminSetting__input-name {
+}
+.adminSetting__label {
+  font-size: var(--fontSizeSmall);
+  font-weight: 500;
+}
+
+.adminSetting__input {
+  font-size: var(--fontSizeSmall);
+  border: 1px solid rgba(45, 48, 75, 0.15);
+  background-color: #fff;
+  outline: none;
+  color: inherit;
+  transition: border-color 0.35s;
+  box-sizing: border-box;
+  margin-top: 16px;
+  width: 269px;
+  height: 42px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 12px;
+}
+.adminSetting__verify {
+  display: flex;
+  height: 30px;
+  margin-top: 40px;
+}
+.adminSetting__icon-verify {
+  width: 20px;
+  height: auto;
+}
+.adminSetting__text-verify {
+  margin-top: 9px;
+  margin-left: 8px;
+}
+.adminSetting__undate-btn {
+  width: 270px;
+  background: #7cb344;
+  color: #fff;
+  height: 40px;
+  border-radius: 20px;
+  font-size: var(--fontSizeSmall);
+}

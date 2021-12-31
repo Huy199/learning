@@ -1,0 +1,85 @@
+.hamburgerMenu__container {
+  @apply h-screen absolute flex flex-col;
+  font-size: var(--fontSizeMedium);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 250px;
+  background: var(--colorText);
+  animation: slideModal 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.hamburgerMenu__container-animation {
+  animation: slideModalOut 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+@keyframes slideModalOut {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: -520px;
+  }
+}
+
+@keyframes slideModal {
+  0% {
+    right: -520px;
+  }
+  100% {
+    right: 0;
+  }
+}
+
+.hamburgerMenu__header {
+  @apply flex justify-end;
+  height: 70px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.hamburgerMenu__btn-cancel {
+  @apply flex flex-col justify-center;
+  padding: 0 24px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.hamburgerMenu__body {
+  @apply flex flex-col flex-1 w-full p-6;
+  color: #fff;
+}
+.hamburger__body-menuItem {
+  margin-top: 12px;
+  @apply flex flex-col;
+  font-size: var(--fontSizeLink);
+  letter-spacing: var(--letterSpacingLink);
+  line-height: var(--lineHeightLink);
+  font-weight: var(--fontWeightLink);
+}
+.hamburger__menu-item-span {
+  cursor: pointer;
+}
+.hamburger__body-menuOption {
+  margin-top: auto;
+}
+.hamburger__menuOption-item .select-form {
+  margin-top: 16px;
+  color: #fff;
+}
+.hamburger__menuOption-item .arrow_down-icon {
+  top: 27px;
+}
+
+.hamburger__menuOption-item .select__form-container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.hamburger__menuOption-item .select__form-title {
+  position: relative;
+}
+.hamburger__menuOption-item .select__form-content {
+  position: unset;
+  width: 100%;
+}
+.hamburger__menuOption-item .select__form-li {
+  color: #000;
+  padding: 10px 8px 10px 24px;
+}
+.hamburger__menuOption-item .ja {
+  border-bottom: 1px solid #000;
+}

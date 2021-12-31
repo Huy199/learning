@@ -1,0 +1,53 @@
+#studentEmail .title {
+  padding:28px 32px;
+  border-bottom: 1px solid #ccc;
+}
+
+#studentEmail .title > h2 {
+  font-size: var(--fontSizeLarge);
+}
+
+#studentEmail .form {
+  padding: 32px;
+}
+#studentEmail .formGroup {
+  @apply flex items-center;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+#studentEmail .formGroup > label,
+#studentEmail .formGroup > input {
+  font-size: var(--fontSizeSmall);
+}
+
+#studentEmail .formGroup > label {
+  flex: 1;
+}
+
+#studentEmail .formGroup > input {
+  flex: 2;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #dadfe1;
+  outline: none;
+  border-radius: 5px;
+}
+#studentEmail .formGroup > input:focus {
+  border-color: #ccc;
+}
+
+#studentEmail .btnSubmit {
+  margin-top: 10px;
+  margin-left: 200px;
+}
+#studentEmail .btnSubmit > button {
+  background: var(--colorBlue);
+  color: #fff;
+  border-color: var(--colorBlue);
+  padding: 11px 16px;
+  border-radius: 2px;
+  text-align: center;
+  font-weight: 500;
+  font-size: var(--fontSizeSmall);
+}

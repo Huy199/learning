@@ -1,0 +1,54 @@
+#tutorListStudent .filter-search {
+  @apply mb-2 flex justify-end items-center;
+  @apply w-full relative;
+}
+
+#tutorListStudent .body {
+  @apply w-full  flex flex-col;
+  overflow: hidden;
+  max-width: 1280px;
+  margin: auto;
+}
+
+#tutorListStudent .wrapContent {
+  @apply w-full flex-1 flex flex-col;
+}
+#tutorListStudent .content_header {
+  @apply flex justify-between items-center;
+  max-height: 2.5rem;
+}
+#tutorListStudent .number_student {
+  font-style: normal;
+  font-weight: 700;
+  font-size: var(--fontSizeLarge);
+  line-height: 1.4;
+  letter-spacing: 0.5px;
+}
+
+#tutorListStudent .createBtn_student {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+#tutorListStudent .btn_student {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  --tw-bg-opacity: 1;
+  background-color: rgba(82, 111, 255, var(--tw-bg-opacity));
+  box-shadow: 0 24px 32px 6px rgb(82 82 152 / 6%);
+  border-radius: 8px;
+}
+
+#tutorListStudent .content_table {
+  margin-top: 16px;
+  width: 100%;
+}
+#tutorListStudent .item_student {
+  overflow-y: overlay;
+  height: calc(100vh - 405px);
+}
+#tutorListStudent .pagination {
+  padding-bottom: 50px;
+}

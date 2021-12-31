@@ -1,0 +1,66 @@
+#paymentHistory {
+  padding-bottom: 20px;
+}
+
+#paymentHistory .title-wrapper {
+}
+
+#paymentHistory .title {
+  padding: 28px 32px;
+}
+
+#paymentHistory .title > h2 {
+  font-size: var(--fontSizeLarge);
+}
+
+#paymentHistory .content {
+  margin: 0 32px;
+  border-top: 1px solid #ccc;
+}
+
+#paymentHistory .content-header {
+  @apply grid grid-cols-12;
+  height: 48px;
+  border-bottom: 1px solid #ccc;
+}
+
+#paymentHistory .content-date {
+  @apply col-span-3  flex items-center;
+}
+
+#paymentHistory .content-hours {
+  @apply col-span-3 flex items-center;
+}
+
+#paymentHistory .content-subject {
+  @apply col-span-3 flex items-center;
+}
+
+#paymentHistory .content-download {
+  @apply col-span-3 flex items-center justify-center;
+}
+
+#paymentHistory .content-download .content-text {
+  color: var(--colorBlue);
+}
+
+#paymentHistory .content-text {
+  color: var(--colorText);
+  font-size: var(--fontSizeSmall);
+}
+
+#paymentHistory .btnSubmit {
+  @apply flex items-center justify-center w-full;
+  margin-top: 20px;
+}
+
+#paymentHistory .btnSubmit > button {
+  background: var(--colorBlue);
+  color: #fff;
+  border-color: var(--colorBlue);
+  padding: 11px 16px;
+  border-radius: 2px;
+  text-align: center;
+  font-weight: 500;
+  font-size: var(--fontSizeSmall);
+}

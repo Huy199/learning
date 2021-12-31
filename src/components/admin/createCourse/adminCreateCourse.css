@@ -1,0 +1,205 @@
+.adminCreateCourse__container {
+  @apply h-screen absolute;
+  font-size: var(--fontSizeMedium);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 450px;
+  background: #fff;
+  animation: slideModal 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+  z-index: 1001;
+}
+.adminCreateCourse__container-animation {
+  animation: slideModalOut 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+@keyframes slideModalOut {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: -620px;
+  }
+}
+
+@keyframes slideModal {
+  0% {
+    right: -520px;
+  }
+  100% {
+    right: 0;
+  }
+}
+
+.adminCreateCourse__header {
+  @apply relative;
+}
+.adminCreateCourse__progressBar {
+  @apply absolute;
+  width: 330px;
+  top: -44px;
+  left: 60px;
+}
+
+.adminCreateCourse__title {
+  @apply text-gray-600;
+  margin-top: 50px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: var(--fontSizeLarge);
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+/* form content */
+.formCreateCourse__body {
+  @apply w-auto h-auto ml-10 mt-12 mr-10;
+}
+.formCreateCourse__scroll {
+  height: calc(100vh - 310px);
+  /* overflow-y: auto; */
+}
+
+.formCreateCourse__nameField-wrap {
+  @apply grid grid-cols-2;
+}
+.formCreateCourse__label {
+  @apply font-bold block mb-1 text-gray-600;
+  font-size: var(--fontSizeSmall);
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.5px;
+}
+.formCreateCourse__input {
+  @apply text-gray-600 w-full;
+  margin-bottom: 20px;
+  border: 1px solid #e5ebf0;
+  box-sizing: border-box;
+  border-radius: 12px;
+  padding: 16px;
+  outline: none;
+  max-height: 40px;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: var(--fontSizeMedium);
+  line-height: 150%;
+}
+.formCreateCourse__input:hover,
+.formCreateCourse__nput:focus-visible {
+  @apply rounded-lg;
+  border: 1px solid #e5ebf0;
+}
+.formCreateCourse__inputStyle {
+  border: 1px solid var(--colorText);
+  border-radius: 12px;
+  background-color: #ffffff;
+}
+.formCreateCourse__inputStyle:hover {
+  border: 1px solid var(--colorText);
+  border-radius: 12px;
+}
+
+.formCreateCourse__inputStyle:focus-visible {
+  border: 1px solid var(--colorText);
+  border-radius: 12px;
+}
+
+/* form btn */
+.formCreateCourse__btn {
+  @apply absolute bottom-10 left-0 flex justify-between w-full items-center;
+}
+.formCreateCourse__btn-left {
+  @apply pl-6;
+  color: var(--colorBlueAdmin);
+}
+.formCreateCourse__btn-right {
+  @apply pr-6;
+}
+.formCreateCourse__btn-cancel {
+  @apply p-4 bg-white mr-4;
+  font-style: normal;
+  font-weight: bold;
+  font-size: var(--fontSizeMedium);
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  width: 120px;
+  height: 56px;
+  border: 1px solid #313f80;
+  box-sizing: border-box;
+  /* SBS */
+  box-shadow: 0px 10px 25px -25px rgba(17, 24, 39, 0.1);
+  border-radius: 12px;
+}
+.formCreateCourse__btn-next {
+  @apply p-4 text-white;
+  background-color: var(--colorBlueAdmin);
+  font-style: normal;
+  font-weight: bold;
+  font-size: var(--fontSizeMedium);
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  width: 120px;
+  height: 56px;
+  box-shadow: 0px 10px 25px -25px rgba(17, 24, 39, 0.1);
+  border-radius: 12px;
+}
+
+/* camera style */
+.createPicture__img-container {
+  @apply relative w-full h-full;
+  z-index: 1001;
+}
+.createPicture__picture {
+  @apply w-80 h-60;
+  border-radius: 12px;
+  z-index: 1000;
+}
+.createPicture__img-text {
+  @apply absolute text-white z-50;
+  bottom: 10px;
+  left: 90px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: var(--fontSizeSmall);
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.005em;
+}
+.createPicture__wrapper {
+  @apply flex flex-col justify-end items-center;
+  width: 100%;
+  height: 240px;
+  border: 0.769895px dashed #9ca3af;
+  box-sizing: border-box;
+  border-radius: 12px;
+}
+.createPicture__img {
+  width: 58px;
+  filter: opacity(0.5);
+}
+.createPicture__h5-btn {
+  color: var(--colorBlueAdmin);
+  margin-top: 26px;
+  margin-bottom: 8px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: var(--fontSizeSmall);
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.005em;
+}
+.createPicture__h6 {
+  @apply text-gray-500;
+  margin-bottom: 48px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--fontSizeTiny);
+  line-height: 135%;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+.formCreateCourse__name {
+  width: 60%;
+}

@@ -1,0 +1,160 @@
+#studentAccount {
+  /* padding: 10px; */
+}
+
+#studentAccount .title {
+  padding: 28px 32px;
+  border-bottom: 1px solid #ccc;
+}
+
+#studentAccount .title > h2 {
+  font-size: var(--fontSizeLarge);
+}
+
+#studentAccount .form {
+  padding: 32px;
+}
+
+#studentAccount .formGroup-image {
+  @apply flex justify-between;
+  margin-bottom: 10px;
+}
+
+#studentAccount .formGroup-image > label {
+  font-size: var(--fontSizeSmall);
+  flex: 1;
+}
+
+#studentAccount .formGroup-image > img {
+  flex: 1;
+  display: block;
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  border-radius: 5px;
+  margin-left: 7px;
+}
+
+#studentAccount .formGroup-image > input {
+  flex: 1;
+  display: block;
+}
+
+#studentAccount .formGroup-image > .input-file-wrapper {
+  @apply flex items-center justify-center;
+}
+
+#studentAccount .formGroup {
+  @apply flex items-center;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+#studentAccount .formGroup > label,
+#studentAccount .formGroup > input {
+  font-size: var(--fontSizeSmall);
+}
+
+#studentAccount .formGroup > label {
+  flex: 1;
+}
+
+#studentAccount .formGroup > input {
+  flex: 2;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #dadfe1;
+  outline: none;
+  border-radius: 5px;
+}
+#studentAccount .formGroup > input:focus {
+  border-color: #ccc;
+}
+
+#studentAccount .formGroup > .uploadImage {
+  @apply flex items-center justify-between;
+}
+
+#studentAccount .btnSubmit {
+  margin-top: 10px;
+  margin-left: 200px;
+}
+#studentAccount .btnSubmit > button {
+  background: var(--colorBlue);
+  color: #fff;
+  border-color: var(--colorBlue);
+  padding: 11px 16px;
+  border-radius: 2px;
+  text-align: center;
+  font-weight: 500;
+  font-size: var(--fontSizeSmall);
+}
+
+#studentAccount .custom-file-input {
+  color: transparent;
+  display: block;
+  position: relative;
+  padding: 62px 0;
+}
+#studentAccount .custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+#studentAccount .custom-file-input::before {
+  content: 'Chọn một ảnh';
+  color: var(--colorBlue);
+  display: inline-block;
+  background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: var(--fontSizeSmall);
+
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#studentAccount .custom-file-input:hover::before {
+  border-color: #dadfe1;
+}
+#studentAccount .custom-file-input:active {
+  outline: 0;
+}
+#studentAccount .custom-file-input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+#studentAccount .select-picture {
+  flex: 3;
+  margin-top: 16px;
+}
+#studentAccount .name-picture {
+  margin-bottom: 12px;
+  font-size: var(--fontSizeSmall);
+  font-weight: 400;
+  color: var(--colorText);
+}
+#studentAccount .edit-picture {
+  display: flex;
+  position: relative;
+  margin-bottom: 32px;
+}
+#studentAccount .picture {
+  width: auto;
+  height: 110px;
+  border-radius: 6px;
+}
+#studentAccount .btn-add {
+  position: absolute;
+  background-color: #f3f4f6;
+  top: 66px;
+  left: 74px;
+  height: 30px;
+  padding: 7px;
+  border-radius: 8px;
+}

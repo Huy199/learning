@@ -1,0 +1,68 @@
+#adminStudent .filter-search {
+  @apply flex justify-end items-center;
+}
+.adminStudent__container {
+  @apply w-full relative;
+  padding: 3vh 62px 0;
+}
+
+#adminStudent .body {
+  @apply w-full  flex flex-col;
+  overflow: hidden;
+  max-width: 1280px;
+  margin: auto;
+}
+#adminStudent .wrapContent {
+  @apply w-full flex-1 flex flex-col;
+}
+#adminStudent .content_header {
+  @apply flex justify-between items-center;
+}
+#adminStudent .number_student {
+  font-style: normal;
+  font-weight: 700;
+  font-size: var(--fontSizeLarge);
+  line-height: 1.4;
+  letter-spacing: 0.5px;
+}
+
+#adminStudent .createBtn_student {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+#adminStudent .btn_student {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  --tw-bg-opacity: 1;
+  background-color: rgba(82, 111, 255, var(--tw-bg-opacity));
+  box-shadow: 0 24px 32px 6px rgb(82 82 152 / 6%);
+  border-radius: 8px;
+}
+
+#adminStudent .content_table {
+  margin-top: 16px;
+  width: 100%;
+}
+#adminStudent .item_student {
+  overflow-y: overlay;
+  height: calc(100vh - 340px);
+}
+
+#adminStudent .createBtn_student {
+  margin-left: 10px;
+  height: 4rem;
+  width: 4rem;
+}
+#adminStudent .btn_student {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--colorBlueAdmin);
+  box-shadow: 0 24px 32px 6px rgb(82 82 152 / 6%);
+  border-radius: 8px;
+}

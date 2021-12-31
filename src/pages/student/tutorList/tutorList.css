@@ -1,0 +1,262 @@
+#tutorList {
+  background-color: #edeff0;
+  padding-bottom: 64px;
+}
+#tutorList .banner {
+  @apply flex flex-col justify-center relative w-full;
+  background-color: var(--colorPink);
+  color: var(--colorText);
+}
+#tutorList .banner__header {
+  @apply md:container md:mx-auto px-8 w-full flex justify-center;
+  color: var(--colorText);
+}
+#tutorList .banner__title-wrap {
+  @apply mx-8;
+  padding-top: 48px;
+  text-align: center;
+}
+#tutorList .banner__title {
+  font-size: var(--fontSizeLarge);
+  font-weight: 600;
+  margin-bottom: 10px;
+  max-width: 100%;
+  color: var(--colorText);
+}
+#tutorList .banner__subTitle {
+  @apply flex  justify-center items-center;
+}
+#tutorList .subTitle__text {
+  font-size: var(--fontSizeTiny);
+  max-width: 1110px;
+  width: 56vw;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#tutorList .subTitle__readMore {
+  @apply ml-4 flex justify-end;
+  font-size: var(--fontSizeTiny);
+  font-weight: 600;
+  color: var(--colorText);
+}
+#tutorList .subTitle__readMore::before {
+  content: '+';
+  margin-right: 4px;
+  display: inline-flex;
+}
+#tutorList .subTitle__readMore:hover:before {
+  transform-origin: 50% 50%;
+  transform: rotate(180deg);
+  transition: transform 0.3s;
+  align-items: center;
+}
+#tutorList .filterTutor {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 99;
+}
+#tutorList .filterTutorResponsive {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 99;
+}
+/* tutor list body */
+#tutorList .body-container {
+  @apply md:container md:mx-auto px-8 mt-16;
+  max-width: 1280px;
+}
+#tutorList .body-titleWrap {
+  @apply items-center w-full;
+  max-width: 1280px;
+  margin-bottom: 32px;
+}
+#tutorList .bodyList__title {
+  font-size: var(--fontSizeMedium);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+#tutorList .body-wrap {
+  display: flex;
+  max-width: 1280px;
+}
+#tutorList .tutor__body-listColumn {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1;
+  max-width: calc(100% - 398px);
+}
+
+/* lesson booking */
+#tutorList .body__lesson-booking {
+  background: #fff;
+  padding: 32px;
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 16px;
+}
+#tutorList .lesson__booking-img {
+  @apply w-full;
+  object-fit: cover;
+  border-top-right-radius: 80px;
+  border-bottom-left-radius: 80px;
+}
+#tutorList .lesson__booking-title {
+  font-size: var(--fontSizeLarge);
+  font-weight: 500;
+  margin: 32px 0 14px;
+}
+#tutorList .lesson__booking-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 0 auto;
+}
+#tutorList .lesson__booking-item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 8px;
+  font-size: var(--fontSizeSmall);
+  color: #737678;
+  list-style: none;
+  text-align: center;
+}
+
+#tutorList .lesson__booking-btn {
+  padding: 16px 74px;
+  border-radius: 12px;
+  margin: 16px 0 12px;
+  /*  */
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  border: 0;
+  align-items: center;
+  min-height: 32px;
+  font-size: var(--fontSizeSmall);
+  line-height: 1;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 100%;
+  cursor: pointer;
+  outline: 0;
+  transition: background-color 50ms;
+  color: #fff;
+  background-color: var(--colorBlue);
+}
+
+/* slide column */
+#tutorList .tutor__body-slideColumn {
+  height: fit-content;
+  flex: 0 1 398px;
+  max-width: 398px;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.4s;
+  will-change: transform;
+  transition: all 0.4s linear;
+}
+
+#tutorList .slide__wrap {
+  position: relative;
+  margin-left: 16px;
+  padding: 16px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 20px rgb(0 0 0 / 10%);
+  transition: transform 0.4s;
+  will-change: transform;
+  pointer-events: all;
+}
+
+#tutorList .slide__arrow {
+  /* pointer-events: none; */
+  display: block;
+  position: absolute;
+  z-index: 1;
+  margin-top: -16px;
+  width: 16px;
+  height: 32px;
+  border-color: transparent #fff transparent transparent;
+  border-style: solid;
+  border-width: 16px 8px;
+  transition: top 0.4s;
+  will-change: top;
+}
+#tutorList .slide__video {
+  position: relative;
+  background-color: transparent;
+  /* padding-bottom: 75%; */
+  border-radius: 4px;
+  overflow: hidden;
+}
+#tutorList .slide__video > iframe {
+  @apply w-full h-full;
+  aspect-ratio: 4 / 3;
+}
+
+#tutorList .slide__video-previews {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 4px;
+}
+#tutorList .slide__content {
+  @apply flex items-center;
+  margin-top: 16px;
+  min-height: 180px;
+}
+#tutorList .pagination .pagination__wrap {
+  position: unset;
+}
+/* Responsive */
+@media only screen and (max-width: 64em) {
+  #tutorList .body-container {
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #tutorList .tutor__body-listColumn {
+    max-width: 100%;
+  }
+  #tutorList .tutor__body-slideColumn {
+    display: none;
+  }
+}
+@media only screen and (max-width: 48em) {
+  #tutorList .body-container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  #tutorList .banner__title {
+    font-size: 28px;
+  }
+  #tutorList .banner__title-wrap {
+    padding: 24px 24px 24px;
+  }
+}
+
+@media only screen and (max-width: 31em) {
+  #tutorList .banner__title-wrap {
+    @apply mx-0;
+  }
+  #tutorList .subTitle__text {
+    width: 29vw;
+  }
+  #tutorList .body__lesson-booking {
+    padding: 16px;
+  }
+}

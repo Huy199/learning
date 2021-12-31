@@ -1,0 +1,69 @@
+#tutorScheduleSlide #tutorScheduleSlide__container {
+  @apply flex flex-col;
+  /* gap: 1px; */
+}
+
+#tutorScheduleSlide .row {
+  @apply grid grid-cols-9;
+  background-color: #fff;
+  gap: 1px;
+  margin-bottom: 1px;
+  /* padding: 5px; */
+}
+
+#tutorScheduleSlide .row__title {
+  @apply col-span-2 flex flex-col items-center justify-center;
+  background-color: #f8f8f8;
+  font-size: var(--fontSizeTiny);
+  padding: 0 2px;
+  gap: 2px;
+}
+
+#tutorScheduleSlide .row__title > p {
+  font-size: 9px;
+  color: var(--colorText);
+}
+
+#tutorScheduleSlide .cell__wrapper {
+  @apply col-span-7 grid grid-cols-7;
+  gap: 1px;
+  background-color: #fff;
+}
+
+#tutorScheduleSlide .cell {
+  @apply col-span-1;
+  padding: 5px;
+  text-align: center;
+  background-color: #f8f8f8;
+  font-size: var(--fontSizeTiny);
+}
+
+#tutorScheduleSlide .row:not(:first-child) .cell {
+  height: 50px;
+  background-color: #a7df8a;
+}
+
+#tutorScheduleSlide .row:not(:first-child) .cell.cell-active {
+  background-color: var(--colorGreen);
+}
+
+#tutorScheduleSlide__viewAll {
+  @apply flex items-center justify-center;
+}
+
+#tutorScheduleSlide__viewAll > button {
+  margin-top: 15px;
+  color: var(--colorBlue);
+  border: 1px solid;
+  background-color: transparent;
+  padding: 8px 24px;
+  font-size: var(--fontSizeTiny);
+  transition: all 0.3s ease-in-out;
+  border-radius: 3px;
+  
+}
+
+#tutorScheduleSlide__viewAll > button:hover {
+  color: #fff;
+  background-color: var(--colorBlue);
+}

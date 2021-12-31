@@ -1,0 +1,107 @@
+#adminSecurity {
+  max-width: 580px;
+  padding-top: 3vh;
+}
+/*title*/
+#adminSecurity .title {
+  font-size: var(--fontSizeMedium);
+  color: var(--colorText);
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+#adminSecurity .desc {
+  line-height: 24px;
+  opacity: 0.65;
+  color: var(--colorText);
+  font-size: var(--fontSizeSmall);
+}
+#adminSecurity .line {
+  border-top: 1px solid rgba(46, 48, 73, 0.1);
+  margin: 32px 0;
+}
+
+/*password*/
+#adminSecurity .password-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+#adminSecurity .password-container {
+  padding-right: 20px;
+  width: 100%;
+  max-width: 50%;
+}
+
+#adminSecurity .password-container > label {
+  display: block;
+  font-size: var(--fontSizeSmall);
+  color: var(--colorText);
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+#adminSecurity .password-input > input {
+  width: 100%;
+  border: 1px solid rgba(45, 48, 75, 0.15);
+  background-color: #fff;
+  outline: none;
+  color: var(--colorText);
+  font-size: (--fontSizeSmall);
+  box-sizing: border-box;
+  height: 42px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 12px;
+  letter-spacing: 0.125em;
+}
+#adminSecurity .new-password-container {
+  display: flex;
+  width: 100%;
+  margin-top: 25px;
+}
+
+/*danger zone*/
+#adminSecurity .danger-zone > h4 {
+  font-size: var(--fontSizeMedium);
+  color: var(--colorText);
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+#adminSecurity .danger-zone > p {
+  line-height: 24px;
+  opacity: 0.65;
+  color: var(--colorText);
+  font-size: var(--fontSizeSmall);
+}
+#adminSecurity .delete-account {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  height: 36px;
+  border-radius: 18px;
+  color: #fff;
+  font-size: var(--fontSizeSmall);
+  background-color: #ff3a52;
+  user-select: none;
+  margin-top: 16px;
+}
+#adminSecurity .delete-account > img {
+  @apply w-6 h-6;
+  margin-right: 6px;
+}
+#adminSecurity .setting-btn {
+  width: 270px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #7cb344;
+  padding-left: 26px;
+  padding-right: 26px;
+  border-radius: 21px;
+  height: 42px;
+  font-size: var(--fontSizeSmall);
+  color: #fff;
+}
+#adminSecurity .check-icon {
+  @apply w-8 h-8;
+  margin-right: 10px;
+}

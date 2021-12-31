@@ -1,0 +1,157 @@
+#tutorInfo {
+  @apply w-full relative;
+  padding-top: 3vh;
+  overflow-y: overlay;
+  padding-left: 0px;
+}
+#tutorInfo .header {
+  font-size: var(--fontSizeMedium);
+  font-weight: 550;
+}
+#tutorInfo .row-select-picture {
+  display: flex;
+}
+#tutorInfo .select-picture {
+  flex: 3;
+  margin-top: 16px;
+}
+#tutorInfo .name-picture {
+  margin-bottom: 12px;
+  font-size: var(--fontSizeSmall);
+  font-weight: 400;
+  color: var(--colorText);
+}
+#tutorInfo .edit-picture {
+  display: flex;
+}
+#tutorInfo .picture {
+  width: auto;
+  height: 98px;
+  border-radius: 6px;
+}
+#tutorInfo .desc-picture {
+  margin-left: 20px;
+}
+#tutorInfo .name-desc {
+  font-size: var(--fontSizeSmall);
+  width: 475px;
+  font-weight: 400;
+  color: var(--colorText);
+  line-height: 20px;
+}
+#tutorInfo .btn-desc {
+  display: flex;
+  margin-top: 29px;
+}
+#tutorInfo .btn-select {
+  display: flex;
+  width: 180px;
+  height: 30px;
+  color: #fff;
+  background: var(--colorBlueAdmin);
+  border-radius: 20px;
+  justify-content: center;
+  padding-top: 7px;
+}
+#tutorInfo .btn-download {
+  display: flex;
+  width: 180px;
+  height: 30px;
+  background: #fff;
+  color: var(--colorBlueAdmin);
+  border-radius: 20px;
+  justify-content: center;
+  padding-top: 7px;
+}
+#tutorInfo .name-btn-select {
+  font-size: var(--fontSizeSmall);
+}
+#tutorInfo .icon-download-btn {
+  width: 34px;
+  height: 27px;
+  margin-top: -4px;
+}
+#tutorInfo .suggest {
+  flex: 1;
+  display: flex;
+  margin-left: 15%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+#tutorInfo .icon-suggest {
+  color: #b6b7c0;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 5px;
+}
+#tutorInfo .text-suggest {
+  padding-top: 10px;
+  padding-left: 10px;
+  font-size: var(--fontSizeTiny);
+  color: #b6b7c0;
+}
+#tutorInfo .hr {
+  border: 0;
+  height: 0;
+  width: 56.5%;
+  border-top: 1px solid rgba(46, 48, 73, 0.1);
+  margin: 32px 0;
+}
+#tutorInfo .edit-info {
+  display: flex;
+}
+#tutorInfo .edit-phone {
+  display: flex;
+}
+#tutorInfo .info {
+  flex: 3;
+}
+#tutorInfo .phone {
+  flex: 3;
+}
+#tutorInfo .name {
+  display: flex;
+}
+#tutorInfo .input-name {
+}
+#tutorInfo .label {
+  font-size: var(--fontSizeSmall);
+  font-weight: 500;
+}
+
+#tutorInfo .input {
+  font-size: var(--fontSizeSmall);
+  border: 1px solid rgba(45, 48, 75, 0.15);
+  background-color: #fff;
+  outline: none;
+  color: inherit;
+  transition: border-color 0.35s;
+  box-sizing: border-box;
+  margin-top: 16px;
+  width: 269px;
+  height: 42px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 4px;
+}
+#tutorInfo .verify {
+  display: flex;
+  height: 30px;
+  margin-top: 40px;
+}
+#tutorInfo .icon-verify {
+  width: 20px;
+  height: auto;
+}
+#tutorInfo .text-verify {
+  margin-top: 9px;
+  margin-left: 8px;
+}
+#tutorInfo .undate-btn {
+  width: 270px;
+  background: #7cb344;
+  color: #fff;
+  height: 40px;
+  border-radius: 20px;
+  font-size: var(--fontSizeSmall);
+}

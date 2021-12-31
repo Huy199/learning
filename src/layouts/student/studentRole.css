@@ -1,0 +1,28 @@
+.studentRole__container .landing__header-container {
+  color: black;
+}
+.studentRole__header-component .landing__header {
+  position: unset;
+  color: var(--colorText);
+}
+.studentRole__header-component .dropdown__btn {
+  color: var(--colorText);
+}
+.studentRole__header-component .hamburger__icon {
+  filter: brightness(0);
+}
+
+.studentRole__subMenu {
+  @apply px-8 py-5;
+  background: rgb(56, 64, 71);
+  display: flex;
+}
+.studentRole__subMenu-link {
+  margin-right: 20px;
+  display: inline-block;
+  color: rgb(138, 149, 158);
+  font-size: var(--fontSizeTiny);
+}
+.studentRole__subMenu-linkActive {
+  color: #ffffff;
+}

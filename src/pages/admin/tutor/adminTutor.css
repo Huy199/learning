@@ -1,0 +1,53 @@
+#adminTutor .filter-search {
+  @apply flex justify-end items-center;
+}
+.adminTutor__container {
+  @apply w-full relative;
+  padding: 3vh 62px 0;
+}
+
+#adminTutor .body {
+  @apply w-full  flex flex-col;
+  overflow: hidden;
+  max-width: 1280px;
+  margin: auto;
+}
+#adminTutor .wrapContent {
+  @apply w-full flex-1 flex flex-col;
+}
+#adminTutor.content_header {
+  @apply flex justify-between items-center;
+  max-height: 2.5rem;
+}
+#adminTutor .number_tutor {
+  font-style: normal;
+  font-weight: 700;
+  font-size: var(--fontSizeLarge);
+  line-height: 1.4;
+  letter-spacing: 0.5px;
+}
+
+#adminTutor .createBtn_tutor {
+  margin-left: 10px;
+  height: 4rem;
+  width: 4rem;
+}
+#adminTutor .btn_tutor {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--colorBlueAdmin);
+  box-shadow: 0 24px 32px 6px rgb(82 82 152 / 6%);
+  border-radius: 8px;
+}
+
+#adminTutor .content_table {
+  margin-top: 16px;
+  width: 100%;
+}
+#adminTutor .item_tutor {
+  overflow-y: overlay;
+  height: calc(100vh - 340px);
+}

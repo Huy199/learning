@@ -1,0 +1,91 @@
+#resume .detailTutor-container {
+  height: 660px;
+  margin-bottom: 16px;
+  position: relative;
+  background: #fff;
+  padding: 0 32px;
+  z-index: 1;
+  border-radius: 0 0 8px 8px;
+}
+#resume .detailTutor-wrap {
+  position: relative;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+#resume .detailTutor-heard {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  overflow: hidden;
+  min-height: 90px;
+  border-bottom: 1px solid #eef0f2;
+}
+#resume .heard-title {
+  padding-right: 20px;
+  min-width: 140px;
+  color: var(--colorText);
+  font-size: var(--fontSizeMedium);
+  font-weight: 400;
+}
+#resume .heard-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+}
+#resume .heard-item {
+  pointer-events: none;
+  cursor: default;
+  color: var(--colorText);
+  font-size: var(--fontSizeMedium);
+  font-weight: 500;
+}
+
+#resume .body-list {
+  display: flex;
+  list-style: none;
+  border: 0;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+#resume .body-item {
+  display: block;
+  position: relative;
+  width: 100%;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+#resume .body-table {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 32px;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+#resume .body-tableRow {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: stretch;
+  padding: 24px 0;
+  border-bottom: 1px solid #eef0f2;
+  list-style: none;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+#resume .body-tableData {
+  position: relative;
+  padding-right: 12px;
+  color: var(--colorText);
+  font-size: var(--fontSizeSmall);
+  line-height: 1.42857143;
+  font-weight: 400;
+  text-align: left;
+}

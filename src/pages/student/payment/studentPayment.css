@@ -1,0 +1,48 @@
+#studentPayment {
+    background-color: #edeff0;
+    height: 100%;
+    min-height: 90vh;
+  }
+  
+  #studentPayment .container {
+    @apply flex;
+  
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  #studentPayment .left {
+    @apply flex flex-col;
+    min-width: 215px;
+    margin-right: 10px;
+    padding: 32px 0;
+  }
+  
+  #studentPayment .route {
+    @apply block;
+    font-weight: 600;
+    padding: 12px 16px;
+    color: #6f757b;
+  }
+  #studentPayment .route:hover {
+    color: #384047;
+  }
+  #studentPayment .route-active {
+    background: #dadfe1;
+    color: #384047;
+  }
+  
+  #studentPayment .route > span {
+    font-size: var(--fontSizeSmall);
+  }
+  
+  #studentPayment .right {
+    width: 752px;
+    padding: 32px;
+  }
+  
+  #studentPayment .right__wrapper {
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  

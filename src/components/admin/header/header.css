@@ -1,0 +1,94 @@
+.headerAdmin {
+  @apply flex items-center justify-end;
+  min-height: 82px;
+  padding: 12.5px 20px;
+}
+
+.headerAmin__menu {
+  @apply flex items-center justify-between;
+}
+
+.headerAdmin__ring__icon {
+  width: 30px;
+}
+.headerAdmin__btn__ring__icon {
+  position: relative;
+  padding: 8px;
+}
+.headerAdmin__ring-number {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background-color: var(--colorBlueAdmin);
+  top: 0;
+  right: 0;
+}
+.headerAdmin__ring-number > span {
+  line-height: 14px;
+  font-weight: 700;
+  font-size: var(--fontSizeTiny);
+  color: #ffffff;
+}
+.headerAdmin__btn__ring__icon:hover {
+  cursor: pointer;
+  background: rgba(238, 238, 241, 0.85);
+  border-radius: 20px;
+}
+
+.headerAdmin__pricing {
+  background: var(--colorBlueAdmin);
+  color: #fff;
+  width: 126px;
+  height: 40px;
+  border-radius: 30px;
+}
+.headerAdmin__star__icon {
+  display: inline-block;
+  margin-right: 8px;
+  width: 20px;
+  margin-bottom: 3px;
+}
+.headerAdmin__info__dropAvt {
+  position: relative;
+}
+.headerAdmin__laguage {
+  position: relative;
+  margin-left: 24px;
+}
+.headerAdmin__laguage .select__form-li:hover {
+  background-color: var(--colorBlueAdmin);
+}
+.headerAdmin__notification {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.headerAdmin__laguage .dropdown__admin__btn {
+  border-radius: 0.6rem;
+  padding: 0.8rem 1.6rem;
+  line-height: 2rem;
+}
+.headerAdmin__laguage .dropdown__content {
+  width: 17.6rem;
+  margin-top: 0.8rem;
+  border-radius: 0.6rem;
+}
+.headerAdmin__laguage .select__form-content {
+  width: 14.4rem;
+  border-radius: 0.6rem;
+  margin-top: 0.8rem;
+  font-size: var(--fontSizeTiny);
+}
+/* Responsive */
+@media only screen and (max-width: 780px) {
+  .headerAdmin__laguage {
+    display: none;
+  }
+  .headerAdmin__pricing {
+    display: none;
+  }
+}

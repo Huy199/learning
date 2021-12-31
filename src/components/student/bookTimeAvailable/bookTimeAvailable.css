@@ -1,0 +1,64 @@
+#bookingTimeAvailable .bookingWrap {
+  @apply relative flex items-center justify-between;
+  color: #6f757b;
+  text-align: center;
+  padding: 16px;
+  margin: 0;
+  border-top: 1px solid #e3e5e6;
+}
+.bookingValue {
+  margin-left: 8px;
+}
+#bookingTimeAvailable .bookingBtn {
+  /* flex: 1 1 60%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  font-size: var(--fontSizeSmall);
+  padding: 12px 24px;
+
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 100%;
+  cursor: pointer;
+  outline: 0;
+  transition: background-color 50ms;
+  color: #fff;
+  background-color: var(--colorBlue);
+  line-height: 1;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Customize style of lib */
+#bookingTimeAvailable .k-calendar .k-calendar-td.k-state-selected .k-link {
+  background-color: var(--colorBlue) !important;
+  color: #fff !important;
+}
+
+#bookingTimeAvailable .k-calendar .k-calendar-view .k-today .k-link {
+  color: var(--colorBlue) ;
+}
+#bookingTimeAvailable .k-calendar .k-nav-today {
+  color: var(--colorBlue);
+}
+#bookingTimeAvailable .k-calendar .k-calendar-navigation li:hover,
+.k-calendar .k-calendar-navigation li.k-state-hover {
+  color: var(--colorBlue);
+}
+#bookingTimeAvailable .timeValue_btn {
+  background-color: #ffffff;
+  color: var(--colorBlue);
+  border-radius: 8px;
+  pointer-events: all;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+#bookingTimeAvailable .timeValue_btn:focus {
+  background-color: var(--colorBlue);
+  color: #fff;
+  border: 1px solid var(--colorBlue);
+}

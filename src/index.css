@@ -1,0 +1,33 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  line-height: 1.2;
+  /* color: #5e5873; */
+  color: var(--colorText);
+}
+
+code {
+  font-family: 'Proxima Nova Alt Rg', monospace;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 26.5625em) {
+  html {
+    font-size: 50%;
+  }
+}

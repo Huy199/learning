@@ -1,0 +1,9 @@
+#schedule {
+  padding-top: 16px;
+}
+.MuiPaper-elevation1 {
+  box-shadow: none !important;
+}
+.MuiPaper-rounded {
+  border-radius: 0 !important;
+}

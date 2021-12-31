@@ -1,0 +1,145 @@
+.adminDetail__student {
+  @apply h-auto w-full relative;
+  padding: 3vh 62px 120px;
+}
+.adminDetail__student-body {
+  @apply h-full w-full flex flex-col;
+  /* overflow: hidden auto; */
+  max-width: 1280px;
+  margin: auto;
+}
+.adminDetail__student-headerInfo {
+  @apply grid grid-cols-3;
+  /* border-radius: 50%/5%; */
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  background: #fff;
+  border: none;
+  width: 100%;
+  padding: 32px;
+}
+.studentHeader__info {
+  @apply col-span-2 flex w-full;
+}
+.studentHeader__avatar {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  min-width: 100px;
+  height: 100px;
+  margin-right: 32px;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.studentHeader__avatar-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.studentHeader__profile-core {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  z-index: 1;
+  width: 100%;
+}
+.studentProfile-title {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+.studentProfile-name {
+  color: var(--colorText);
+  font-size: var(--fontSizeMedium);
+  font-weight: 600;
+}
+
+.studentProfile-item {
+  margin-bottom: 4px !important;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 0;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  cursor: pointer;
+}
+.studentProfile-wrapIcon {
+  display: flex;
+  align-items: center;
+  font-size: var(--fontSizeSmall);
+}
+.studentProfile-wrapIcon > img {
+  margin-right: 8px;
+}
+
+.studentHeader__feature {
+  @apply col-span-1 flex justify-between;
+}
+
+.adminDetail__student-briefInfo {
+  width: 100%;
+  padding: 32px;
+  /* border-bottom: 1px solid rgba(46, 48, 73, 0.1); */
+  box-sizing: border-box;
+  text-align: left;
+}
+.studentBrief__item {
+  font-size: var(--fontSizeSmall);
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.studentBrief__info-title {
+  margin-right: 8px;
+  font-weight: 600;
+}
+.detailStudent_content {
+  border: 1px solid #f2f2f2;
+  border-radius: 12px;
+  margin-top: 58px;
+}
+.detailStudent_menu {
+  border-radius: 8px 8px 0 0;
+  border-bottom: 1px solid #edeff0;
+  padding: 24px 32px;
+  background-color: #fff;
+}
+.detailStudent_menu-list {
+  list-style-type: none;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: flex-start;
+}
+.detailStudent_menu-item--active {
+  color: var(--colorText);
+  font-weight: 500;
+  line-height: 20px;
+  position: relative;
+  font-size: var(--fontSizeSmall);
+  margin-right: 28px;
+  cursor: pointer;
+  border-bottom: 2px solid;
+}
+.detailStudent_menu-item {
+  color: var(--colorText);
+  font-weight: 500;
+  line-height: 20px;
+  position: relative;
+  font-size: var(--fontSizeSmall);
+  margin-right: 28px;
+  cursor: pointer;
+}
+
+.adminDetail__student-mainInfo .rate-container {
+  display: none !important;
+}

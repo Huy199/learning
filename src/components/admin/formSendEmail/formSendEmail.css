@@ -1,0 +1,156 @@
+#formSendEmail .container {
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 450px;
+  background: #fff;
+  padding: 20px;
+
+  animation: slideModal 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#formSendEmail .animation-close {
+  animation: slideModalOut 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+@keyframes slideModalOut {
+  0% {
+    /* right: 0; */
+    transform: translateX(0);
+  }
+  100% {
+    /* right: -620px; */
+    transform: translateX(620px);
+  }
+}
+
+@keyframes slideModal {
+  0% {
+    /* right: -520px; */
+    transform: translateX(520px);
+  }
+  100% {
+    /* right: 0; */
+    transform: translateX(0);
+  }
+}
+
+#formSendEmail .title {
+  @apply flex items-center justify-center;
+  font-size: var(--fontSizeLarge);
+  margin-top: 30px;
+}
+
+#formSendEmail .wrapper {
+  @apply flex flex-col;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+#formSendEmail .label {
+  @apply font-medium block;
+  font-size: var(--fontSizeSmall);
+  cursor: pointer;
+  font-weight: 700;
+}
+
+#formSendEmail .input,
+#formSendEmail .message {
+  border: 1px solid #9ca3af;
+  border-radius: 12px;
+  margin-top: 10px;
+  font-size: var(--fontSizeSmall);
+  font-weight: 500;
+  padding: 12px 10px;
+}
+
+#formSendEmail .message {
+  resize: none;
+  width: 100%;
+  padding: 10px;
+  line-height: 18px;
+}
+
+#formSendEmail .btn-group {
+  @apply flex items-center absolute;
+  gap: 5px;
+  bottom: 30px;
+  right: 30px;
+}
+
+#formSendEmail .btn {
+  @apply shadow-md;
+  padding: 15px 30px;
+  outline: none;
+  font-size: var(--fontSizeSmall);
+  border-radius: 15px;
+  color: #fff;
+  background-color: var(--colorBlueAdmin);
+  border: 1px solid transparent;
+  transition: all 0.3s ease-out;
+  font-weight: 600;
+  line-height: 24px;
+  width: 100px;
+}
+
+#formSendEmail .btn:hover {
+  opacity: 0.7;
+}
+
+#formSendEmail .btn.cancel {
+  color: var(--colorBlueAdmin);
+  background-color: #fff;
+  border-color: var(--colorBlueAdmin);
+  margin-right: 10px;
+}
+
+#formSendEmail .sent__success p {
+  padding: 10px 20px;
+  font-size: var(--fontSizeMedium);
+  border-radius: 5px;
+  text-align: center;
+}
+
+#formSendEmail .sent__success {
+  @apply flex items-center justify-center;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#formSendEmail .sent__success .wrapper {
+  @apply flex items-center justify-center;
+
+  padding: 20px;
+  /* background-color: #4bb543; */
+  background-color: #fff;
+  border-radius: 8px;
+  width: 400px;
+}
+
+#formSendEmail .btn-group {
+  /* @apply flex items-center justify-center; */
+}
+
+#formSendEmail .sent__success button {
+  font-size: var(--fontSizeMedium);
+  background-color: var(--colorBlueAdmin);
+  /* width: 100%; */
+  padding: 15px 25px;
+  border-radius: 12px;
+  color: #fff;
+  transition: all 0.2s linear;
+  border: none;
+  outline: 0;
+  width: 130px;
+}
+
+#formSendEmail .sent__success button:hover {
+  opacity: 0.8;
+}

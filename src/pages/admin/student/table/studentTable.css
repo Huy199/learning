@@ -1,0 +1,63 @@
+#adminStudentTable {
+  @apply w-full mb-3;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+#adminStudentTable .wrapper {
+  @apply grid grid-cols-7 place-content-center;
+  height: 100%;
+  margin-left: 24px;
+  font-size: var(--fontSizeSmall);
+  line-height: 22px;
+  letter-spacing: 0.5px;
+}
+.studentTable__header-title {
+  height: 48px;
+  font-weight: 700;
+}
+
+#adminStudentTable .name {
+  @apply flex items-center;
+  height: 100%;
+}
+
+#adminStudentTable .img {
+  @apply mr-3;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+#adminStudentTable .teaches {
+  @apply flex items-center;
+  height: 100%;
+}
+#adminStudentTable .subject {
+  @apply flex items-center justify-center;
+  height: 100%;
+}
+#adminStudentTable .point {
+  @apply flex items-center justify-center;
+  height: 100%;
+}
+#adminStudentTable .time {
+  @apply flex items-center justify-center;
+  height: 100%;
+}
+#adminStudentTable .money {
+  @apply flex items-center justify-center;
+  height: 100%;
+}
+#adminStudentTable .money {
+  @apply flex items-center justify-center;
+  height: 100%;
+}
+#adminStudentTable .coin {
+  @apply flex items-center justify-center;
+  height: 100%;
+}
+
+#adminStudentTable .date {
+  @apply flex items-center justify-center;
+  height: 100%;
+}
